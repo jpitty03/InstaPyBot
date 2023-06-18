@@ -1,0 +1,822 @@
+2023-06-15 20:09:04 - Checking for login state
+2023-06-15 20:09:04 - Logged in: True
+2023-06-15 20:09:04 - Logged in
+2023-06-15 20:09:04 - Finding search bar image
+2023-06-15 20:09:04 - Search bar image found
+2023-06-15 20:09:06 - Clicked on the search bar
+2023-06-15 20:09:06 - Found bbqsprinkles, skipping
+2023-06-15 20:09:06 - Searching for bettingfixed3656
+2023-06-15 20:13:22 - Checking for login state
+2023-06-15 20:13:22 - Logged in: True
+2023-06-15 20:13:22 - Logged in
+2023-06-15 20:13:22 - Finding search bar image
+2023-06-15 20:13:22 - Search bar image found
+2023-06-15 20:13:24 - Clicked on the search bar
+2023-06-15 20:13:24 - Found bbqsprinkles, skipping
+2023-06-15 20:13:24 - Searching for bettingfixed3656
+2023-06-15 20:14:05 - Checking for login state
+2023-06-15 20:14:05 - Logged in: True
+2023-06-15 20:14:05 - Logged in
+2023-06-15 20:14:05 - Finding search bar image
+2023-06-15 20:14:05 - Search bar image found
+2023-06-15 20:14:08 - Clicked on the search bar
+2023-06-15 20:14:08 - Found bbqsprinkles, skipping
+2023-06-15 20:14:08 - Searching for bettingfixed3656
+2023-06-15 20:15:26 - Checking for login state
+2023-06-15 20:15:26 - Logged in: True
+2023-06-15 20:15:26 - Logged in
+2023-06-15 20:15:26 - Finding search bar image
+2023-06-15 20:15:26 - Search bar image found
+2023-06-15 20:15:29 - Clicked on the search bar
+2023-06-15 20:15:29 - Found bbqsprinkles, skipping
+2023-06-15 20:15:29 - Searching for bettingfixed3656
+2023-06-15 20:24:41 - Checking for login state
+2023-06-15 20:24:41 - Logged in: True
+2023-06-15 20:24:41 - Logged in
+2023-06-15 20:24:41 - Finding search bar image
+2023-06-15 20:24:41 - Search bar image found
+2023-06-15 20:24:44 - Clicked on the search bar
+2023-06-15 20:24:44 - Found bbqsprinkles, skipping
+2023-06-15 20:24:44 - Searching for bettingfixed3656
+2023-06-15 20:25:48 - Checking for login state
+2023-06-15 20:25:48 - Logged in: True
+2023-06-15 20:25:48 - Logged in
+2023-06-15 20:25:48 - Finding search bar image
+2023-06-15 20:25:49 - Search bar image found
+2023-06-15 20:25:51 - Clicked on the search bar
+2023-06-15 20:25:51 - Found bbqsprinkles, skipping
+2023-06-15 20:25:51 - Searching for bettingfixed3656
+2023-06-15 20:25:51 - Follower count: 1175
+2023-06-15 20:25:51 - Following count: 1669
+2023-06-15 20:25:57 - Following user: bettingfixed3656
+2023-06-15 20:25:57 - Following user: bettingfixed3656
+2023-06-15 20:31:51 - Checking for login state
+2023-06-15 20:31:52 - Logged in: True
+2023-06-15 20:31:52 - Logged in
+2023-06-15 20:31:52 - Finding search bar image
+2023-06-15 20:31:52 - Search bar image found
+2023-06-15 20:31:55 - Clicked on the search bar
+2023-06-15 20:31:55 - Found bbqsprinkles, skipping
+2023-06-15 20:31:55 - Searching for bettingfixed3656
+2023-06-15 20:31:55 - Follower count: 1175
+2023-06-15 20:31:55 - Following count: 1669
+2023-06-15 20:32:01 - Following user: bettingfixed3656
+2023-06-15 20:32:02 - Following user: bettingfixed3656
+2023-06-15 20:33:47 - Checking for login state
+2023-06-15 20:33:48 - Logged in: True
+2023-06-15 20:33:48 - Logged in
+2023-06-15 20:33:48 - Finding search bar image
+2023-06-15 20:33:48 - Search bar image found
+2023-06-15 20:33:51 - Clicked on the search bar
+2023-06-15 20:33:51 - Found bbqsprinkles, skipping
+2023-06-15 20:33:51 - Searching for bettingfixed3656
+2023-06-15 20:33:51 - Follower count: 1175
+2023-06-15 20:33:51 - Following count: 1669
+2023-06-15 20:33:58 - Following user: bettingfixed3656
+2023-06-15 20:33:58 - Following user: bettingfixed3656
+2023-06-15 20:37:05 - Checking for login state
+2023-06-15 20:37:05 - Logged in: True
+2023-06-15 20:37:05 - Logged in
+2023-06-15 20:37:05 - Finding search bar image
+2023-06-15 20:37:06 - Search bar image found
+2023-06-15 20:37:08 - Clicked on the search bar
+2023-06-15 20:37:08 - Found bbqsprinkles, skipping
+2023-06-15 20:37:08 - Searching for bettingfixed3656
+2023-06-15 20:37:09 - Follower count: 1175
+2023-06-15 20:37:09 - Following count: 1669
+2023-06-15 20:37:15 - Following user: bettingfixed3656
+2023-06-15 20:37:16 - Following user: bettingfixed3656
+2023-06-15 20:41:45 - Checking for login state
+2023-06-15 20:41:45 - Logged in: True
+2023-06-15 20:41:45 - Logged in
+2023-06-15 20:41:45 - Finding search bar image
+2023-06-15 20:41:45 - Search bar image found
+2023-06-15 20:41:47 - Clicked on the search bar
+2023-06-15 20:41:47 - Searching for bbq_toonz123
+2023-06-15 20:41:48 - Follower count: 330
+2023-06-15 20:41:48 - Following count: 1587
+2023-06-15 20:41:54 - Following user: bbq_toonz123
+2023-06-15 20:41:54 - Following user: bbq_toonz123
+2023-06-15 20:41:54 - Checking for login state
+2023-06-15 20:41:54 - Logged in: True
+2023-06-15 20:41:54 - Logged in
+2023-06-15 20:41:54 - Finding search bar image
+2023-06-15 20:41:54 - Search bar image found
+2023-06-15 20:41:57 - Clicked on the search bar
+2023-06-15 20:41:57 - Searching for garrettarchuleta
+2023-06-15 20:41:58 - Follower count: 172
+2023-06-15 20:41:58 - Following count: 218
+2023-06-15 20:42:04 - Following user: garrettarchuleta
+2023-06-15 20:42:05 - Following user: garrettarchuleta
+2023-06-15 20:42:56 - Checking for login state
+2023-06-15 20:42:57 - Logged in: True
+2023-06-15 20:42:57 - Logged in
+2023-06-15 20:42:57 - Finding search bar image
+2023-06-15 20:42:57 - Search bar image found
+2023-06-15 20:43:00 - Clicked on the search bar
+2023-06-15 20:43:00 - Searching for bbq_toonz123
+2023-06-15 20:43:00 - Follower count: 330
+2023-06-15 20:43:00 - Following count: 1587
+2023-06-15 20:43:06 - Following user: bbq_toonz123
+2023-06-15 20:43:06 - Following user: bbq_toonz123
+2023-06-15 20:43:09 - Checking for login state
+2023-06-15 20:43:10 - Logged in: True
+2023-06-15 20:43:10 - Logged in
+2023-06-15 20:43:10 - Finding search bar image
+2023-06-15 20:43:10 - Search bar image found
+2023-06-15 20:43:12 - Clicked on the search bar
+2023-06-15 20:43:12 - Searching for garrettarchuleta
+2023-06-15 20:43:13 - Follower count: 172
+2023-06-15 20:43:13 - Following count: 218
+2023-06-15 20:43:19 - Following user: garrettarchuleta
+2023-06-15 20:43:19 - Follow button found
+2023-06-15 20:43:23 - User followed successfully
+2023-06-15 20:43:23 - Following user: garrettarchuleta
+2023-06-15 20:43:23 - Follow button found
+2023-06-15 20:43:28 - User followed successfully
+2023-06-15 21:36:07 - Checking for login state
+2023-06-15 21:36:07 - Logged in: False
+2023-06-15 21:36:07 - Not logged in, exiting program
+2023-06-15 21:36:43 - Checking for login state
+2023-06-15 21:36:44 - Logged in: False
+2023-06-15 21:36:44 - Not logged in, exiting program
+2023-06-15 21:37:42 - Checking for login state
+2023-06-15 21:37:42 - Logged in: True
+2023-06-15 21:37:42 - Logged in
+2023-06-15 21:37:42 - Finding search bar image
+2023-06-15 21:37:42 - Search bar image found
+2023-06-15 21:37:45 - Clicked on the search bar
+2023-06-15 21:37:45 - Searching for emilyrinaudo09
+2023-06-15 21:37:46 - Follower count: 0
+2023-06-15 21:37:46 - Following count: 2834
+2023-06-15 21:37:51 - Following user: emilyrinaudo09
+2023-06-15 21:37:51 - Following user: emilyrinaudo09
+2023-06-15 21:37:54 - Checking for login state
+2023-06-15 21:37:55 - Logged in: True
+2023-06-15 21:37:55 - Logged in
+2023-06-15 21:37:55 - Finding search bar image
+2023-06-15 21:37:55 - Search bar image found
+2023-06-15 21:37:57 - Clicked on the search bar
+2023-06-15 21:37:57 - Searching for harrishawaksbladeshop
+2023-06-15 21:37:58 - Follower count: 8698
+2023-06-15 21:37:58 - Following count: 5903
+2023-06-15 21:38:03 - Following user: harrishawaksbladeshop
+2023-06-15 21:38:03 - Following user: harrishawaksbladeshop
+2023-06-15 21:42:07 - Checking for login state
+2023-06-15 21:42:07 - Logged in: False
+2023-06-15 21:42:07 - Not logged in, exiting program
+2023-06-15 21:42:34 - Checking for login state
+2023-06-15 21:42:34 - Logged in: True
+2023-06-15 21:42:34 - Logged in
+2023-06-15 21:42:34 - Finding search bar image
+2023-06-15 21:42:34 - Search bar image found
+2023-06-15 21:42:37 - Clicked on the search bar
+2023-06-15 21:42:37 - Searching for bensonhenry77
+2023-06-15 21:42:37 - Follower count: 0
+2023-06-15 21:42:37 - Following count: 7483
+2023-06-15 21:42:44 - Following user: bensonhenry77
+2023-06-15 21:42:44 - Follow button found
+2023-06-15 21:42:47 - User followed successfully
+2023-06-15 21:42:47 - Following user: bensonhenry77
+2023-06-15 21:42:47 - Follow button found
+2023-06-15 21:42:52 - User followed successfully
+2023-06-15 21:42:52 - Followed count: 1
+2023-06-15 21:42:52 - Refreshing page
+2023-06-15 21:42:57 - Checking for login state
+2023-06-15 21:42:58 - Logged in: True
+2023-06-15 21:42:58 - Logged in
+2023-06-15 21:42:58 - Finding search bar image
+2023-06-15 21:42:58 - Search bar image found
+2023-06-15 21:43:00 - Clicked on the search bar
+2023-06-15 21:43:00 - Searching for magestic_craftsman
+2023-06-15 21:46:22 - Checking for login state
+2023-06-15 21:46:22 - Logged in: True
+2023-06-15 21:46:22 - Logged in
+2023-06-15 21:46:22 - Finding search bar image
+2023-06-15 21:46:23 - Search bar image found
+2023-06-15 21:46:26 - Clicked on the search bar
+2023-06-15 21:46:26 - Searching for bensonhenry77
+2023-06-15 21:46:26 - Follower count: 0
+2023-06-15 21:46:26 - Following count: 7483
+2023-06-15 21:46:33 - Following user: bensonhenry77
+2023-06-15 21:46:33 - Following user: bensonhenry77
+2023-06-15 21:46:37 - Checking for login state
+2023-06-15 21:46:38 - Logged in: True
+2023-06-15 21:46:38 - Logged in
+2023-06-15 21:46:38 - Finding search bar image
+2023-06-15 21:46:38 - Search bar image found
+2023-06-15 21:46:40 - Clicked on the search bar
+2023-06-15 21:46:40 - Searching for magestic_craftsman
+2023-06-15 21:47:18 - Checking for login state
+2023-06-15 21:47:18 - Logged in: True
+2023-06-15 21:47:18 - Logged in
+2023-06-15 21:47:18 - Finding search bar image
+2023-06-15 21:47:18 - Search bar image found
+2023-06-15 21:47:21 - Clicked on the search bar
+2023-06-15 21:47:21 - Searching for bensonhenry77
+2023-06-15 21:47:21 - Follower count: 0
+2023-06-15 21:47:21 - Following count: 7483
+2023-06-15 21:47:26 - Following user: bensonhenry77
+2023-06-15 21:47:27 - Following user: bensonhenry77
+2023-06-15 21:47:31 - Checking for login state
+2023-06-15 21:47:31 - Logged in: True
+2023-06-15 21:47:31 - Logged in
+2023-06-15 21:47:31 - Finding search bar image
+2023-06-15 21:47:32 - Search bar image found
+2023-06-15 21:47:34 - Clicked on the search bar
+2023-06-15 21:47:34 - Searching for magestic_craftsman
+2023-06-15 21:48:52 - Checking for login state
+2023-06-15 21:48:52 - Logged in: True
+2023-06-15 21:48:52 - Logged in
+2023-06-15 21:48:52 - Finding search bar image
+2023-06-15 21:48:52 - Search bar image found
+2023-06-15 21:48:55 - Clicked on the search bar
+2023-06-15 21:48:55 - Searching for bensonhenry77
+2023-06-15 21:48:58 - Follower count: 0
+2023-06-15 21:48:58 - Following count: 7483
+2023-06-15 21:49:04 - Following user: bensonhenry77
+2023-06-15 21:49:04 - Following user: bensonhenry77
+2023-06-15 21:49:09 - Checking for login state
+2023-06-15 21:49:10 - Logged in: True
+2023-06-15 21:49:10 - Logged in
+2023-06-15 21:49:10 - Finding search bar image
+2023-06-15 21:49:10 - Search bar image found
+2023-06-15 21:49:12 - Clicked on the search bar
+2023-06-15 21:49:12 - Searching for magestic_craftsman
+2023-06-15 21:49:55 - Checking for login state
+2023-06-15 21:49:55 - Logged in: True
+2023-06-15 21:49:55 - Logged in
+2023-06-15 21:49:55 - Finding search bar image
+2023-06-15 21:49:55 - Search bar image found
+2023-06-15 21:49:58 - Clicked on the search bar
+2023-06-15 21:49:58 - Searching for bensonhenry77
+2023-06-15 21:50:03 - Follower count: 0
+2023-06-15 21:50:03 - Following count: 7483
+2023-06-15 21:50:09 - Following user: bensonhenry77
+2023-06-15 21:50:10 - Following user: bensonhenry77
+2023-06-15 21:50:14 - Checking for login state
+2023-06-15 21:50:14 - Logged in: True
+2023-06-15 21:50:14 - Logged in
+2023-06-15 21:50:14 - Finding search bar image
+2023-06-15 21:50:14 - Search bar image found
+2023-06-15 21:50:17 - Clicked on the search bar
+2023-06-15 21:50:17 - Searching for magestic_craftsman
+2023-06-16 10:18:00 - Checking for login state
+2023-06-16 10:18:01 - Logged in: True
+2023-06-16 10:18:01 - Logged in
+2023-06-16 10:18:01 - Finding search bar image
+2023-06-16 10:18:01 - Search bar image found
+2023-06-16 10:18:03 - Clicked on the search bar
+2023-06-16 10:18:03 - Searching for bensonhenry77
+2023-06-16 10:18:09 - Follower count: 0
+2023-06-16 10:18:09 - Following count: 7482
+2023-06-16 10:18:15 - Following user: bensonhenry77
+2023-06-16 10:18:15 - Following user: bensonhenry77
+2023-06-16 10:18:19 - Checking for login state
+2023-06-16 10:18:19 - Logged in: True
+2023-06-16 10:18:19 - Logged in
+2023-06-16 10:18:19 - Finding search bar image
+2023-06-16 10:18:19 - Search bar image found
+2023-06-16 10:18:22 - Clicked on the search bar
+2023-06-16 10:18:22 - Searching for magestic_craftsman
+2023-06-16 12:55:53 - Checking for login state
+2023-06-16 12:55:54 - Logged in: True
+2023-06-16 12:55:54 - Logged in
+2023-06-16 12:55:54 - Finding search bar image
+2023-06-16 12:55:54 - Search bar image found
+2023-06-16 12:55:56 - Clicked on the search bar
+2023-06-16 12:55:56 - Searching for qnorthbbq
+2023-06-16 13:00:00 - Checking for login state
+2023-06-16 13:00:00 - Logged in: False
+2023-06-16 13:00:00 - Not logged in, exiting program
+2023-06-16 13:01:05 - Checking for login state
+2023-06-16 13:01:05 - Logged in: True
+2023-06-16 13:01:05 - Logged in
+2023-06-16 13:01:05 - Finding search bar image
+2023-06-16 13:01:06 - Search bar image found
+2023-06-16 13:01:08 - Clicked on the search bar
+2023-06-16 13:01:08 - Searching for qnorthbbq
+2023-06-16 13:01:17 - Following user: qnorthbbq
+2023-06-16 13:01:17 - Following user: qnorthbbq
+2023-06-16 13:01:26 - Checking for login state
+2023-06-16 13:01:26 - Logged in: True
+2023-06-16 13:01:26 - Logged in
+2023-06-16 13:01:26 - Finding search bar image
+2023-06-16 13:01:26 - Search bar image found
+2023-06-16 13:01:29 - Clicked on the search bar
+2023-06-16 13:01:29 - Searching for pickle99mv2.0
+2023-06-16 13:01:38 - Follower count more than double following count, or low following/posts, skipping
+2023-06-16 13:06:06 - Checking for login state
+2023-06-16 13:06:07 - Logged in: True
+2023-06-16 13:06:07 - Logged in
+2023-06-16 13:06:07 - Finding search bar image
+2023-06-16 13:06:07 - Search bar image found
+2023-06-16 13:06:09 - Clicked on the search bar
+2023-06-16 13:06:09 - Searching for qnorthbbq
+2023-06-16 13:06:20 - Following user: qnorthbbq
+2023-06-16 13:06:20 - Following user: qnorthbbq
+2023-06-16 13:06:29 - Checking for login state
+2023-06-16 13:06:29 - Logged in: True
+2023-06-16 13:06:29 - Logged in
+2023-06-16 13:06:29 - Finding search bar image
+2023-06-16 13:06:29 - Search bar image found
+2023-06-16 13:06:32 - Clicked on the search bar
+2023-06-16 13:06:32 - Searching for pickle99mv2.0
+2023-06-16 13:06:42 - Follower count more than double following count, or low following/posts, skipping
+2023-06-16 13:20:38 - Checking for login state
+2023-06-16 13:20:38 - Logged in: True
+2023-06-16 13:20:38 - Logged in
+2023-06-16 13:20:38 - Finding search bar image
+2023-06-16 13:20:38 - Search bar image found
+2023-06-16 13:20:41 - Clicked on the search bar
+2023-06-16 13:20:41 - Searching for qnorthbbq
+2023-06-16 13:20:51 - Following user: qnorthbbq
+2023-06-16 13:20:51 - Following user: qnorthbbq
+2023-06-16 13:20:58 - Checking for login state
+2023-06-16 13:20:58 - Logged in: True
+2023-06-16 13:20:58 - Logged in
+2023-06-16 13:20:58 - Finding search bar image
+2023-06-16 13:20:58 - Search bar image found
+2023-06-16 13:21:01 - Clicked on the search bar
+2023-06-16 13:21:01 - Searching for pickle99mv2.0
+2023-06-17 09:15:47 - Checking for login state
+2023-06-17 09:15:48 - Logged in: False
+2023-06-17 09:15:48 - Not logged in, exiting program
+2023-06-17 09:16:09 - Checking for login state
+2023-06-17 09:16:10 - Logged in: True
+2023-06-17 09:16:10 - Logged in
+2023-06-17 09:16:10 - Finding search bar image
+2023-06-17 09:16:10 - Search bar image found
+2023-06-17 09:16:13 - Clicked on the search bar
+2023-06-17 09:16:13 - Searching for nicole_popspremium
+2023-06-17 09:16:22 - Following user: nicole_popspremium
+2023-06-17 09:16:26 - Follow button found
+2023-06-17 09:16:30 - User followed successfully
+2023-06-17 09:16:30 - Following user: nicole_popspremium
+2023-06-17 09:16:43 - Checking for login state
+2023-06-17 09:16:43 - Logged in: True
+2023-06-17 09:16:43 - Logged in
+2023-06-17 09:16:43 - Finding search bar image
+2023-06-17 09:16:43 - Search bar image found
+2023-06-17 09:16:46 - Clicked on the search bar
+2023-06-17 09:16:46 - Searching for chris_knives__
+2023-06-17 09:16:56 - Following user: chris_knives__
+2023-06-17 09:16:59 - Follow button found
+2023-06-17 09:17:03 - User followed successfully
+2023-06-17 09:17:03 - Following user: chris_knives__
+2023-06-17 09:21:33 - Checking for login state
+2023-06-17 09:21:34 - Logged in: True
+2023-06-17 09:21:34 - Logged in
+2023-06-17 09:21:34 - Finding search bar image
+2023-06-17 09:21:34 - Search bar image found
+2023-06-17 09:21:37 - Clicked on the search bar
+2023-06-17 09:21:37 - Searching for cincygrillcleaning
+2023-06-17 09:21:53 - Checking for login state
+2023-06-17 09:21:53 - Logged in: True
+2023-06-17 09:21:53 - Logged in
+2023-06-17 09:21:53 - Finding search bar image
+2023-06-17 09:21:54 - Search bar image found
+2023-06-17 09:21:57 - Clicked on the search bar
+2023-06-17 09:21:57 - Searching for jaderade93
+2023-06-17 09:22:09 - Following user: jaderade93
+2023-06-17 09:22:12 - Follow button found
+2023-06-17 09:22:16 - User not followed
+2023-06-17 09:22:16 - Following user: jaderade93
+2023-06-17 09:22:19 - Follow button found
+2023-06-17 09:22:23 - User not followed
+2023-06-17 09:26:50 - Checking for login state
+2023-06-17 09:26:51 - Logged in: True
+2023-06-17 09:26:51 - Logged in
+2023-06-17 09:26:51 - Finding search bar image
+2023-06-17 09:26:51 - Search bar image found
+2023-06-17 09:26:54 - Clicked on the search bar
+2023-06-17 09:26:54 - Searching for bloodmountainbbq
+2023-06-17 09:27:04 - Following user: bloodmountainbbq
+2023-06-17 09:27:08 - Follow button found
+2023-06-17 09:27:12 - User not followed
+2023-06-17 09:27:12 - Following user: bloodmountainbbq
+2023-06-17 09:27:15 - Follow button found
+2023-06-17 09:27:19 - User not followed
+2023-06-17 10:42:32 - Checking for login state
+2023-06-17 10:42:32 - Logged in: False
+2023-06-17 10:42:32 - Not logged in, exiting program
+2023-06-17 10:43:00 - Checking for login state
+2023-06-17 10:43:00 - Logged in: True
+2023-06-17 10:43:00 - Logged in
+2023-06-17 10:43:00 - Finding search bar image
+2023-06-17 10:43:00 - Search bar image found
+2023-06-17 10:43:03 - Clicked on the search bar
+2023-06-17 10:43:03 - Searching for bloodmountainbbq
+2023-06-17 10:43:13 - Following user: bloodmountainbbq
+2023-06-17 10:43:16 - Follow button found
+2023-06-17 10:43:20 - User not followed
+2023-06-17 10:43:20 - Following user: bloodmountainbbq
+2023-06-17 10:43:34 - Checking for login state
+2023-06-17 10:43:34 - Logged in: True
+2023-06-17 10:43:34 - Logged in
+2023-06-17 10:43:34 - Finding search bar image
+2023-06-17 10:43:34 - Search bar image found
+2023-06-17 10:43:37 - Clicked on the search bar
+2023-06-17 10:43:37 - Searching for killermillerque
+2023-06-17 10:45:29 - Following user: test
+2023-06-17 10:45:32 - Follow button found
+2023-06-17 10:45:37 - User not followed
+2023-06-17 10:46:20 - Following user: test
+2023-06-17 10:46:23 - Follow button found
+2023-06-17 10:46:27 - User not followed
+2023-06-17 10:47:37 - Following user: test
+2023-06-17 10:47:58 - Following user: test
+2023-06-17 10:48:01 - Follow button found
+2023-06-17 10:48:06 - User not followed
+2023-06-17 10:49:10 - Following user: test
+2023-06-17 10:49:39 - Following user: test
+2023-06-17 10:49:46 - Following user: test
+2023-06-17 10:49:50 - Follow button found
+2023-06-17 10:49:54 - User not followed
+2023-06-17 10:51:05 - Following user: test
+2023-06-17 10:51:28 - Following user: test
+2023-06-17 10:51:43 - Following user: test
+2023-06-17 10:51:46 - Follow button found
+2023-06-17 10:52:37 - Checking for login state
+2023-06-17 10:52:38 - Logged in: True
+2023-06-17 10:52:38 - Logged in
+2023-06-17 10:52:38 - Finding search bar image
+2023-06-17 10:52:38 - Search bar image found
+2023-06-17 10:52:40 - Clicked on the search bar
+2023-06-17 10:52:40 - Searching for bloodmountainbbq
+2023-06-17 10:52:51 - Following user: bloodmountainbbq
+2023-06-17 10:52:54 - Follow button found
+2023-06-17 10:52:58 - Following user: bloodmountainbbq
+2023-06-17 10:55:59 - Checking for login state
+2023-06-17 10:56:00 - Logged in: True
+2023-06-17 10:56:00 - Logged in
+2023-06-17 10:56:00 - Finding search bar image
+2023-06-17 10:56:00 - Search bar image found
+2023-06-17 10:56:03 - Clicked on the search bar
+2023-06-17 10:56:03 - Searching for bloodmountainbbq
+2023-06-17 10:56:13 - Following user: bloodmountainbbq
+2023-06-17 10:56:16 - Follow button found
+2023-06-17 10:56:20 - Following user: bloodmountainbbq
+2023-06-17 10:56:38 - Checking for login state
+2023-06-17 10:56:39 - Logged in: True
+2023-06-17 10:56:39 - Logged in
+2023-06-17 10:56:39 - Finding search bar image
+2023-06-17 10:56:39 - Search bar image found
+2023-06-17 10:56:41 - Clicked on the search bar
+2023-06-17 10:56:41 - Searching for killermillerque
+2023-06-17 10:56:51 - Following user: killermillerque
+2023-06-17 10:56:55 - Follow button found
+2023-06-17 10:56:59 - Following user: killermillerque
+2023-06-17 14:55:55 - Checking for login state
+2023-06-17 14:55:56 - Logged in: True
+2023-06-17 14:55:56 - Logged in
+2023-06-17 14:55:56 - Finding search bar image
+2023-06-17 14:55:56 - Search bar image found
+2023-06-17 14:55:59 - Clicked on the search bar
+2023-06-17 14:55:59 - Searching for bloodmountainbbq
+2023-06-17 14:56:07 - Following user: bloodmountainbbq
+2023-06-17 14:56:10 - Follow button found
+2023-06-17 14:56:15 - Following user: bloodmountainbbq
+2023-06-17 14:56:32 - Checking for login state
+2023-06-17 14:56:33 - Logged in: True
+2023-06-17 14:56:33 - Logged in
+2023-06-17 14:56:33 - Finding search bar image
+2023-06-17 14:56:33 - Search bar image found
+2023-06-17 14:56:35 - Clicked on the search bar
+2023-06-17 14:56:35 - Searching for killermillerque
+2023-06-17 14:56:45 - Following user: killermillerque
+2023-06-17 14:56:49 - Follow button found
+2023-06-17 14:56:53 - Following user: killermillerque
+2023-06-17 15:07:54 - Checking for login state
+2023-06-17 15:07:54 - Logged in: True
+2023-06-17 15:07:54 - Logged in
+2023-06-17 15:07:54 - Finding search bar image
+2023-06-17 15:07:54 - Search bar image found
+2023-06-17 15:07:57 - Clicked on the search bar
+2023-06-17 15:07:57 - Searching for bloodmountainbbq
+2023-06-17 15:08:06 - Following user: bloodmountainbbq
+2023-06-17 15:08:09 - Follow button found
+2023-06-17 15:08:14 - Following user: bloodmountainbbq
+2023-06-17 15:08:32 - Checking for login state
+2023-06-17 15:08:32 - Logged in: True
+2023-06-17 15:08:32 - Logged in
+2023-06-17 15:08:32 - Finding search bar image
+2023-06-17 15:08:33 - Search bar image found
+2023-06-17 15:08:36 - Clicked on the search bar
+2023-06-17 15:08:36 - Searching for killermillerque
+2023-06-17 15:08:45 - Following user: killermillerque
+2023-06-17 15:08:48 - Follow button found
+2023-06-17 15:08:52 - Following user: killermillerque
+2023-06-17 15:18:09 - Checking for login state
+2023-06-17 15:18:09 - Logged in: True
+2023-06-17 15:18:09 - Logged in
+2023-06-17 15:18:09 - Finding search bar image
+2023-06-17 15:18:09 - Search bar image found
+2023-06-17 15:18:12 - Clicked on the search bar
+2023-06-17 15:18:12 - Searching for bloodmountainbbq
+2023-06-17 15:18:21 - Following user: bloodmountainbbq
+2023-06-17 15:18:24 - Follow button found
+2023-06-17 15:18:51 - Checking for login state
+2023-06-17 15:18:51 - Logged in: True
+2023-06-17 15:18:51 - Logged in
+2023-06-17 15:18:51 - Finding search bar image
+2023-06-17 15:18:51 - Search bar image found
+2023-06-17 15:18:54 - Clicked on the search bar
+2023-06-17 15:18:54 - Searching for killermillerque
+2023-06-17 15:19:03 - Following user: killermillerque
+2023-06-17 15:19:06 - Follow button found
+2023-06-17 15:21:03 - Checking for login state
+2023-06-17 15:21:03 - Logged in: True
+2023-06-17 15:21:03 - Logged in
+2023-06-17 15:21:03 - Finding search bar image
+2023-06-17 15:21:04 - Search bar image found
+2023-06-17 15:21:06 - Clicked on the search bar
+2023-06-17 15:21:06 - Searching for bloodmountainbbq
+2023-06-17 15:21:18 - Following user: bloodmountainbbq
+2023-06-17 15:21:21 - Follow button found
+2023-06-17 15:21:41 - Checking for login state
+2023-06-17 15:21:41 - Logged in: True
+2023-06-17 15:21:41 - Logged in
+2023-06-17 15:21:41 - Finding search bar image
+2023-06-17 15:21:41 - Search bar image found
+2023-06-17 15:21:44 - Clicked on the search bar
+2023-06-17 15:21:44 - Searching for killermillerque
+2023-06-17 15:21:53 - Following user: killermillerque
+2023-06-17 15:21:56 - Follow button found
+2023-06-17 15:25:22 - Checking for login state
+2023-06-17 15:25:23 - Logged in: True
+2023-06-17 15:25:23 - Logged in
+2023-06-17 15:25:23 - Finding search bar image
+2023-06-17 15:25:23 - Search bar image found
+2023-06-17 15:25:26 - Clicked on the search bar
+2023-06-17 15:25:26 - Searching for dillhani_royal_priest
+2023-06-17 15:25:37 - Following user: dillhani_royal_priest
+2023-06-17 15:25:49 - Checking for login state
+2023-06-17 15:25:49 - Logged in: True
+2023-06-17 15:25:49 - Logged in
+2023-06-17 15:25:49 - Finding search bar image
+2023-06-17 15:25:49 - Search bar image found
+2023-06-17 15:25:52 - Clicked on the search bar
+2023-06-17 15:25:52 - Searching for d.jbravo730
+2023-06-17 15:26:04 - Following user: d.jbravo730
+2023-06-17 15:26:15 - Checking for login state
+2023-06-17 15:26:15 - Logged in: True
+2023-06-17 15:26:15 - Logged in
+2023-06-17 15:26:16 - Finding search bar image
+2023-06-17 15:26:16 - Search bar image found
+2023-06-17 15:26:18 - Clicked on the search bar
+2023-06-17 15:26:18 - Searching for keriananna
+2023-06-17 15:26:39 - Checking for login state
+2023-06-17 15:26:39 - Logged in: True
+2023-06-17 15:26:39 - Logged in
+2023-06-17 15:26:39 - Finding search bar image
+2023-06-17 15:26:39 - Search bar image found
+2023-06-17 15:26:42 - Clicked on the search bar
+2023-06-17 15:26:42 - Searching for bbq_logo_1234
+2023-06-17 15:26:52 - Following user: bbq_logo_1234
+2023-06-17 15:27:03 - Checking for login state
+2023-06-17 15:27:03 - Logged in: True
+2023-06-17 15:27:03 - Logged in
+2023-06-17 15:27:03 - Finding search bar image
+2023-06-17 15:27:03 - Search bar image found
+2023-06-17 15:27:06 - Clicked on the search bar
+2023-06-17 15:27:06 - Searching for muhammad_umer_56
+2023-06-17 15:27:17 - Following user: muhammad_umer_56
+2023-06-17 15:27:28 - Checking for login state
+2023-06-17 15:27:28 - Logged in: True
+2023-06-17 15:27:28 - Logged in
+2023-06-17 15:27:28 - Finding search bar image
+2023-06-17 15:27:28 - Search bar image found
+2023-06-17 15:27:31 - Clicked on the search bar
+2023-06-17 15:27:31 - Searching for eliza_rose544
+2023-06-17 15:27:50 - Checking for login state
+2023-06-17 15:27:51 - Logged in: True
+2023-06-17 15:27:51 - Logged in
+2023-06-17 15:27:51 - Finding search bar image
+2023-06-17 15:27:51 - Search bar image found
+2023-06-17 15:27:54 - Clicked on the search bar
+2023-06-17 15:27:54 - Searching for beer_gut_actual
+2023-06-17 15:28:07 - Following user: beer_gut_actual
+2023-06-17 15:28:18 - Checking for login state
+2023-06-17 15:28:19 - Logged in: True
+2023-06-17 15:28:19 - Logged in
+2023-06-17 15:28:19 - Finding search bar image
+2023-06-17 15:28:19 - Search bar image found
+2023-06-17 15:28:22 - Clicked on the search bar
+2023-06-17 15:28:22 - Searching for leticia_d_coach
+2023-06-17 17:25:25 - Checking for login state
+2023-06-17 17:25:26 - Logged in: True
+2023-06-17 17:25:26 - Logged in
+2023-06-17 17:25:26 - Finding search bar image
+2023-06-17 17:25:26 - Search bar image found
+2023-06-17 17:25:28 - Clicked on the search bar
+2023-06-17 17:25:28 - Searching for adesanyao2002
+2023-06-17 17:25:46 - Checking for login state
+2023-06-17 17:25:46 - Logged in: True
+2023-06-17 17:25:46 - Logged in
+2023-06-17 17:25:46 - Finding search bar image
+2023-06-17 17:25:46 - Search bar image found
+2023-06-17 17:25:49 - Clicked on the search bar
+2023-06-17 17:25:49 - Searching for dcline7607
+2023-06-17 17:26:02 - Following user: dcline7607
+2023-06-17 17:26:12 - Checking for login state
+2023-06-17 17:26:12 - Logged in: True
+2023-06-17 17:26:12 - Logged in
+2023-06-17 17:26:12 - Finding search bar image
+2023-06-17 17:26:12 - Search bar image found
+2023-06-17 17:26:15 - Clicked on the search bar
+2023-06-17 17:26:15 - Searching for janebondbbq
+2023-06-17 22:05:55 - Checking for login state
+2023-06-17 22:05:56 - Logged in: True
+2023-06-17 22:05:56 - Logged in
+2023-06-17 22:05:56 - Finding search bar image
+2023-06-17 22:05:56 - Search bar image found
+2023-06-17 22:05:58 - Clicked on the search bar
+2023-06-17 22:05:58 - Searching for adesanyao2002
+2023-06-17 22:06:18 - Checking for login state
+2023-06-17 22:06:18 - Logged in: True
+2023-06-17 22:06:18 - Logged in
+2023-06-17 22:06:18 - Finding search bar image
+2023-06-17 22:06:18 - Search bar image found
+2023-06-17 22:06:21 - Clicked on the search bar
+2023-06-17 22:06:21 - Searching for dcline7607
+2023-06-17 22:06:43 - Checking for login state
+2023-06-17 22:06:43 - Logged in: True
+2023-06-17 22:06:43 - Logged in
+2023-06-17 22:06:43 - Finding search bar image
+2023-06-17 22:06:44 - Search bar image found
+2023-06-17 22:06:46 - Clicked on the search bar
+2023-06-17 22:06:46 - Searching for janebondbbq
+2023-06-17 22:07:09 - Checking for login state
+2023-06-17 22:07:10 - Logged in: True
+2023-06-17 22:07:10 - Logged in
+2023-06-17 22:07:10 - Finding search bar image
+2023-06-17 22:07:10 - Search bar image found
+2023-06-17 22:07:12 - Clicked on the search bar
+2023-06-17 22:07:12 - Searching for woodpelletsonline
+2023-06-17 22:07:36 - Checking for login state
+2023-06-17 22:07:36 - Logged in: True
+2023-06-17 22:07:36 - Logged in
+2023-06-17 22:07:36 - Finding search bar image
+2023-06-17 22:07:36 - Search bar image found
+2023-06-17 22:07:39 - Clicked on the search bar
+2023-06-17 22:07:39 - Searching for _xx_chelsea_beckham_x
+2023-06-17 22:08:02 - Checking for login state
+2023-06-17 22:08:02 - Logged in: True
+2023-06-17 22:08:02 - Logged in
+2023-06-17 22:08:02 - Finding search bar image
+2023-06-17 22:08:03 - Search bar image found
+2023-06-17 22:08:05 - Clicked on the search bar
+2023-06-17 22:08:05 - Searching for charcoal_kings_nsw
+2023-06-17 22:08:29 - Checking for login state
+2023-06-17 22:08:30 - Logged in: True
+2023-06-17 22:08:30 - Logged in
+2023-06-17 22:08:30 - Finding search bar image
+2023-06-17 22:08:30 - Search bar image found
+2023-06-17 22:08:32 - Clicked on the search bar
+2023-06-17 22:08:32 - Searching for porksoda.78
+2023-06-17 22:08:54 - Checking for login state
+2023-06-17 22:08:55 - Logged in: True
+2023-06-17 22:08:55 - Logged in
+2023-06-17 22:08:55 - Finding search bar image
+2023-06-17 22:08:55 - Search bar image found
+2023-06-17 22:08:57 - Clicked on the search bar
+2023-06-17 22:08:57 - Searching for crbrandts
+2023-06-17 22:09:19 - Checking for login state
+2023-06-17 22:09:19 - Logged in: True
+2023-06-17 22:09:19 - Logged in
+2023-06-17 22:09:19 - Finding search bar image
+2023-06-17 22:09:19 - Search bar image found
+2023-06-17 22:09:22 - Clicked on the search bar
+2023-06-17 22:09:22 - Searching for wildflowerhempco
+2023-06-17 22:09:44 - Checking for login state
+2023-06-17 22:09:44 - Logged in: True
+2023-06-17 22:09:44 - Logged in
+2023-06-17 22:09:44 - Finding search bar image
+2023-06-17 22:09:44 - Search bar image found
+2023-06-17 22:09:47 - Clicked on the search bar
+2023-06-17 22:09:47 - Searching for ianebirondo022089
+2023-06-17 22:10:11 - Checking for login state
+2023-06-17 22:10:11 - Logged in: True
+2023-06-17 22:10:11 - Logged in
+2023-06-17 22:10:11 - Finding search bar image
+2023-06-17 22:10:11 - Search bar image found
+2023-06-17 22:10:13 - Clicked on the search bar
+2023-06-17 22:10:13 - Searching for princeawt07
+2023-06-17 22:10:37 - Checking for login state
+2023-06-17 22:10:37 - Logged in: True
+2023-06-17 22:10:37 - Logged in
+2023-06-17 22:10:37 - Finding search bar image
+2023-06-17 22:10:37 - Search bar image found
+2023-06-17 22:10:40 - Clicked on the search bar
+2023-06-17 22:10:40 - Searching for kniv.es12345
+2023-06-17 22:10:54 - Follow button found
+2023-06-17 22:11:27 - Checking for login state
+2023-06-17 22:11:27 - Logged in: True
+2023-06-17 22:11:27 - Logged in
+2023-06-17 22:11:27 - Finding search bar image
+2023-06-17 22:11:28 - Search bar image found
+2023-06-17 22:11:30 - Clicked on the search bar
+2023-06-17 22:11:30 - Searching for john.willms.7
+2023-06-17 22:11:50 - Checking for login state
+2023-06-17 22:11:51 - Logged in: True
+2023-06-17 22:11:51 - Logged in
+2023-06-17 22:11:51 - Finding search bar image
+2023-06-17 22:11:51 - Search bar image found
+2023-06-17 22:11:53 - Clicked on the search bar
+2023-06-17 22:11:53 - Searching for evelynamanda059
+2023-06-17 22:12:12 - Checking for login state
+2023-06-17 22:12:13 - Logged in: True
+2023-06-17 22:12:13 - Logged in
+2023-06-17 22:12:13 - Finding search bar image
+2023-06-17 22:12:13 - Search bar image found
+2023-06-17 22:12:15 - Clicked on the search bar
+2023-06-17 22:12:15 - Searching for p_warsaw_
+2023-06-17 22:12:36 - Checking for login state
+2023-06-17 22:12:37 - Logged in: True
+2023-06-17 22:12:37 - Logged in
+2023-06-17 22:12:37 - Finding search bar image
+2023-06-17 22:12:37 - Search bar image found
+2023-06-17 22:12:39 - Clicked on the search bar
+2023-06-17 22:12:39 - Searching for forloveoffoods
+2023-06-17 22:12:56 - Checking for login state
+2023-06-17 22:12:56 - Logged in: True
+2023-06-17 22:12:56 - Logged in
+2023-06-17 22:12:56 - Finding search bar image
+2023-06-17 22:12:56 - Search bar image found
+2023-06-17 22:12:59 - Clicked on the search bar
+2023-06-17 22:12:59 - Searching for frankpeter198
+2023-06-17 22:13:13 - Follow button found
+2023-06-17 22:13:34 - Checking for login state
+2023-06-17 22:13:35 - Logged in: True
+2023-06-17 22:13:35 - Logged in
+2023-06-17 22:13:35 - Finding search bar image
+2023-06-17 22:13:35 - Search bar image found
+2023-06-17 22:13:37 - Clicked on the search bar
+2023-06-17 22:13:37 - Searching for moonmanncartel.backup
+2023-06-17 22:13:57 - Checking for login state
+2023-06-17 22:13:57 - Logged in: True
+2023-06-17 22:13:57 - Logged in
+2023-06-17 22:13:57 - Finding search bar image
+2023-06-17 22:13:57 - Search bar image found
+2023-06-17 22:14:00 - Clicked on the search bar
+2023-06-17 22:14:00 - Searching for ezekielweje
+2023-06-17 22:14:20 - Checking for login state
+2023-06-17 22:14:21 - Logged in: True
+2023-06-17 22:14:21 - Logged in
+2023-06-17 22:14:21 - Finding search bar image
+2023-06-17 22:14:21 - Search bar image found
+2023-06-17 22:14:23 - Clicked on the search bar
+2023-06-17 22:14:23 - Searching for ginganinjagriddler
+2023-06-17 22:14:45 - Checking for login state
+2023-06-17 22:14:46 - Logged in: True
+2023-06-17 22:14:46 - Logged in
+2023-06-17 22:14:46 - Finding search bar image
+2023-06-17 22:14:46 - Search bar image found
+2023-06-17 22:14:48 - Clicked on the search bar
+2023-06-17 22:14:48 - Searching for emeraldmedicineco
+2023-06-17 22:15:03 - Follow button found
+2023-06-17 22:15:23 - Checking for login state
+2023-06-17 22:15:23 - Logged in: True
+2023-06-17 22:15:23 - Logged in
+2023-06-17 22:15:23 - Finding search bar image
+2023-06-17 22:15:24 - Search bar image found
+2023-06-17 22:15:26 - Clicked on the search bar
+2023-06-17 22:15:26 - Searching for official_knive
+2023-06-17 22:15:43 - Checking for login state
+2023-06-17 22:15:43 - Logged in: True
+2023-06-17 22:15:43 - Logged in
+2023-06-17 22:15:43 - Finding search bar image
+2023-06-17 22:15:44 - Search bar image found
+2023-06-17 22:15:46 - Clicked on the search bar
+2023-06-17 22:15:46 - Searching for stadiumchef
+2023-06-18 10:25:55 - Checking for login state
+2023-06-18 10:25:55 - Logged in: True
+2023-06-18 10:25:55 - Logged in
+2023-06-18 10:26:03 - Searching for ogtecthedon1
+2023-06-18 10:26:18 - Follow button found
+2023-06-18 10:26:38 - Checking for login state
+2023-06-18 10:26:38 - Logged in: True
+2023-06-18 10:26:38 - Logged in
+2023-06-18 10:26:45 - Searching for spacegodsaaron
+2023-06-18 10:26:59 - Follow button found
+2023-06-18 10:27:20 - Checking for login state
+2023-06-18 10:27:20 - Logged in: True
+2023-06-18 10:27:20 - Logged in
+2023-06-18 10:27:27 - Searching for leefuxwell
+2023-06-18 10:27:51 - Checking for login state
+2023-06-18 10:27:52 - Logged in: True
+2023-06-18 10:27:52 - Logged in
+2023-06-18 10:27:58 - Searching for crashcrewbbq
+2023-06-18 10:28:18 - Checking for login state
+2023-06-18 10:28:18 - Logged in: True
+2023-06-18 10:28:18 - Logged in
+2023-06-18 10:28:27 - Searching for bee_kind843
+2023-06-18 10:28:52 - Checking for login state
+2023-06-18 10:28:52 - Logged in: True
+2023-06-18 10:28:52 - Logged in
+2023-06-18 10:29:01 - Searching for thezencolife
+2023-06-18 10:29:20 - Checking for login state
+2023-06-18 10:29:20 - Logged in: True
+2023-06-18 10:29:20 - Logged in
+2023-06-18 10:29:30 - Searching for happy_hempman

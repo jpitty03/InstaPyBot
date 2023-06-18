@@ -1,0 +1,9 @@
+# Ignore all files in this directory
+env
+__pycache__
+*.pyc
+*.pyo
+*.log
+*.swp
+*.out
+*.pid

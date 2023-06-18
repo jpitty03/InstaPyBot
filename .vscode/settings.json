@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\Lib\\site-packages",
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
