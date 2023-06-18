@@ -77,12 +77,14 @@ while x < 50:
 
     # Get user data and skip if requirements not met
     print("Getting followers and following count")
-    posts_count, follower_count, following_count = get_followers_following()
-
-    if get_followers_following() is None:
+    counts = get_followers_following()
+    if counts is None:
         print("User got a jacked up profile, skipping")
         x += 1
         continue
+
+    posts_count, follower_count, following_count = counts
+
     if ((int(follower_count) / int(following_count) > 2) or 
         (int(following_count) < 100) or 
         (int(posts_count) < 15)):
