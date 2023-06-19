@@ -24,7 +24,7 @@ def go_to_user_profile(profileUrl):
 
 
     
-
+# function can be removed/found better way to do this
 def find_and_click_search_bar():
     # Find the search bar image on the screen
     log_action("Finding search bar image")

@@ -7,3 +7,9 @@ __pycache__
 *.swp
 *.out
 *.pid
+
+# Ignore all files in this directory
+assets/image_processing/image_one.png
+assets/image_processing/image_three.png
+assets/image_processing/image_two.png
+assets/image_processing/image_section.png

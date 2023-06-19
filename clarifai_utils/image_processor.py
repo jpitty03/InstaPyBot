@@ -46,7 +46,7 @@ def get_label_matches(output):
             if (float(concept.value) >= constants.FOOD_LABEL_THRESHOLD):
                 matched_labels.append(concept.name)
 
-    if matched_labels:
+    if len(matched_labels) > 2:
         print("Matched labels:", matched_labels)
         return True
     else:

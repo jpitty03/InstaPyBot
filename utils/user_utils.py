@@ -26,9 +26,7 @@ def get_followers_following():
     dim = (width, height)
     binary = cv2.resize(binary, dim, interpolation=cv2.INTER_AREA)
 
-    txt = pytesseract.image_to_string(binary, config="--oem 3 --psm 4")
-    print(txt)
-    
+    txt = pytesseract.image_to_string(binary, config="--oem 3 --psm 4")    
 
     s = txt.replace(',', '') # remove commas if any
 
@@ -60,8 +58,6 @@ def convert_str(s):
         return s
 
 
-print(get_followers_following())
-
 class FollowTracker:
     def __init__(self):
         self.followed_count = 0
@@ -80,6 +76,19 @@ class FollowTracker:
             return True
         else:
             return False
+    def set_start_time(self):
+        self.start_time = time.time()
+
+    def get_start_time(self):
+        return self.start_time
+    
+    def calculate_time_difference(self):
+        if self.start_time is None:
+            raise ValueError("Start time has not been set.")
+
+        current_time = time.time()
+        time_difference = current_time - self.start_time
+        return time_difference
 
 
 def follow_user(user):
@@ -218,4 +227,4 @@ def comment_on_post():
     pyautogui.hotkey('ctrl', 'v')
     time.sleep(random.uniform(0.2, 0.5))
     pyautogui.press('enter')
-    time.sleep(random.uniform(0.2, 0.5))
+    time.sleep(random.uniform(2, 3))

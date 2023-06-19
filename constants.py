@@ -61,24 +61,18 @@ FOOD_COMMENTS = [
 
 FOOD_LABELS = [
     'food',
-    'meal',
-    'dinner',
-    'dessert',
     'meat',
     'burger',
-    'sandwich',
-    'pizza',
-    'pasta',
     'chicken',
     'beef',
     'pork',
     'seafood',
-    'fish',
-    'sausage',
     'beefsteak',
     'steak',
     'sirloin',
     'ribeye',
+    'ribs',
+    'pork ribs'
 ]
 FOOD_LABEL_THRESHOLD = 0.9
 

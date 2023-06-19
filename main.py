@@ -5,11 +5,10 @@ import numpy as np
 import pyperclip
 import constants
 from utils.user_utils import FollowTracker, comment_on_post, convert_image_to_bytes, find_posts_icon_location, follow_user, get_followers_following, is_account_not_private_or_no_posts, save_first_three_posts, save_image_section
-from utils.search_utils import find_and_click_search_bar, find_comment_button, go_to_user_profile
+from utils.search_utils import find_comment_button, go_to_user_profile
 from utils.login_utils import is_logged_in
 from utils.log_utils import log_action
 from clarifai_utils.image_processor import send_image_to_clarifai, get_label_matches
-from utils.instagram_scraper import InstagramProfileScraper
 import cv2
 import pyautogui
 
@@ -18,6 +17,12 @@ pyautogui.sleep(2)
 
 # Initialize the follow tracker
 follow_tracker = FollowTracker()
+
+# Set current time
+follow_tracker.set_start_time()
+print(follow_tracker.get_start_time())
+pyautogui.sleep(2)
+print(follow_tracker.calculate_time_difference())
 
 # Read the CSV file
 profileUrls = []
@@ -29,10 +34,14 @@ with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
         profileUrls.append(profileUrl)
 
 
+
+
+
+
 x = 0
 # x = len(usernames)
 # print (x)
-while x < 50:
+while x < 500:
     # Refresh the page
     if follow_tracker.is_following_too_many() == True:
         print("Followed too many users, sleeping for 15 minutes")
@@ -55,25 +64,13 @@ while x < 50:
     # Meat and potatoes
 
     username = go_to_user_profile(profileUrls[x])
-    if username == 'bbqsprinkles':
-        log_action("Found bbqsprinkles, skipping")
+    if username == constants.ACCOUNT_NAME:
+        log_action("Found" + constants.ACCOUNT_NAME +", skipping")
         x += 1
 
-    log_action("Searching for " + username)
     print("Searching for " + username)
     pyautogui.sleep(2)
-    
-    pyperclip.copy(username)
-    time.sleep(random.uniform(0.2, 0.5))
-    pyautogui.hotkey('ctrl', 'v')
-    time.sleep(random.uniform(0.2, 0.5))
-    pyautogui.moveTo(constants.SEARCH_X, constants.SEARCH_Y, 
-                    duration=random.uniform(0.5, 1.0), 
-                    tween=pyautogui.easeOutQuad)
-    time.sleep(random.uniform(0.7, 1.5))
-    pyautogui.click()
     time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
-
 
     # Get user data and skip if requirements not met
     print("Getting followers and following count")
@@ -87,7 +84,8 @@ while x < 50:
 
     if ((int(follower_count) / int(following_count) > 2) or 
         (int(following_count) < 100) or 
-        (int(posts_count) < 15)):
+        (int(posts_count) < 15) or 
+        (int(following_count) / int(follower_count) > 4)):
         print("Follower count more than double following count, or low following/posts, skipping")
         x += 1
         continue

@@ -820,3 +820,245 @@
 2023-06-18 10:29:20 - Logged in: True
 2023-06-18 10:29:20 - Logged in
 2023-06-18 10:29:30 - Searching for happy_hempman
+2023-06-18 14:12:35 - Checking for login state
+2023-06-18 14:12:35 - Logged in: True
+2023-06-18 14:12:35 - Logged in
+2023-06-18 14:12:43 - Searching for ogtecthedon1
+2023-06-18 14:13:07 - Checking for login state
+2023-06-18 14:13:07 - Logged in: True
+2023-06-18 14:13:07 - Logged in
+2023-06-18 14:13:15 - Searching for spacegodsaaron
+2023-06-18 14:13:34 - Checking for login state
+2023-06-18 14:13:35 - Logged in: True
+2023-06-18 14:13:35 - Logged in
+2023-06-18 14:13:42 - Searching for leefuxwell
+2023-06-18 14:14:07 - Checking for login state
+2023-06-18 14:14:08 - Logged in: True
+2023-06-18 14:14:08 - Logged in
+2023-06-18 14:14:16 - Searching for crashcrewbbq
+2023-06-18 14:14:34 - Checking for login state
+2023-06-18 14:14:34 - Logged in: True
+2023-06-18 14:14:34 - Logged in
+2023-06-18 14:14:42 - Searching for bee_kind843
+2023-06-18 14:15:02 - Checking for login state
+2023-06-18 14:15:02 - Logged in: True
+2023-06-18 14:15:02 - Logged in
+2023-06-18 14:15:11 - Searching for thezencolife
+2023-06-18 14:15:32 - Checking for login state
+2023-06-18 14:15:32 - Logged in: True
+2023-06-18 14:15:32 - Logged in
+2023-06-18 14:15:41 - Searching for happy_hempman
+2023-06-18 14:16:01 - Checking for login state
+2023-06-18 14:16:01 - Logged in: True
+2023-06-18 14:16:01 - Logged in
+2023-06-18 14:16:08 - Searching for ironhorsecattle
+2023-06-18 14:16:27 - Checking for login state
+2023-06-18 14:16:27 - Logged in: True
+2023-06-18 14:16:27 - Logged in
+2023-06-18 14:16:35 - Searching for flamingobbqco
+2023-06-18 14:16:53 - Checking for login state
+2023-06-18 14:16:53 - Logged in: True
+2023-06-18 14:16:53 - Logged in
+2023-06-18 14:17:02 - Searching for health_goddess_fit
+2023-06-18 14:17:28 - Checking for login state
+2023-06-18 14:17:28 - Logged in: True
+2023-06-18 14:17:28 - Logged in
+2023-06-18 14:17:37 - Searching for cracka_stacka_
+2023-06-18 14:17:54 - Checking for login state
+2023-06-18 14:17:54 - Logged in: True
+2023-06-18 14:17:54 - Logged in
+2023-06-18 14:18:03 - Searching for divine_339_
+2023-06-18 14:23:47 - Checking for login state
+2023-06-18 14:23:48 - Logged in: True
+2023-06-18 14:23:48 - Logged in
+2023-06-18 14:24:09 - Follow button found
+2023-06-18 14:24:29 - Checking for login state
+2023-06-18 14:24:29 - Logged in: True
+2023-06-18 14:24:29 - Logged in
+2023-06-18 14:24:51 - Checking for login state
+2023-06-18 14:24:51 - Logged in: True
+2023-06-18 14:24:51 - Logged in
+2023-06-18 14:25:13 - Follow button found
+2023-06-18 14:25:33 - Checking for login state
+2023-06-18 14:25:33 - Logged in: True
+2023-06-18 14:25:33 - Logged in
+2023-06-18 14:25:52 - Follow button found
+2023-06-18 14:26:24 - Checking for login state
+2023-06-18 14:26:25 - Logged in: True
+2023-06-18 14:26:25 - Logged in
+2023-06-18 14:30:33 - Checking for login state
+2023-06-18 14:30:33 - Logged in: True
+2023-06-18 14:30:33 - Logged in
+2023-06-18 14:30:52 - Follow button found
+2023-06-18 14:31:26 - Checking for login state
+2023-06-18 14:31:26 - Logged in: True
+2023-06-18 14:31:26 - Logged in
+2023-06-18 14:31:47 - Follow button found
+2023-06-18 14:32:24 - Checking for login state
+2023-06-18 14:32:24 - Logged in: True
+2023-06-18 14:32:24 - Logged in
+2023-06-18 14:32:47 - Checking for login state
+2023-06-18 14:32:47 - Logged in: True
+2023-06-18 14:32:47 - Logged in
+2023-06-18 14:33:14 - Checking for login state
+2023-06-18 14:33:14 - Logged in: True
+2023-06-18 14:33:14 - Logged in
+2023-06-18 14:33:39 - Checking for login state
+2023-06-18 14:33:39 - Logged in: True
+2023-06-18 14:33:39 - Logged in
+2023-06-18 14:34:04 - Checking for login state
+2023-06-18 14:34:04 - Logged in: True
+2023-06-18 14:34:04 - Logged in
+2023-06-18 14:34:26 - Checking for login state
+2023-06-18 14:34:26 - Logged in: True
+2023-06-18 14:34:26 - Logged in
+2023-06-18 14:34:46 - Follow button found
+2023-06-18 14:35:18 - Checking for login state
+2023-06-18 14:35:19 - Logged in: True
+2023-06-18 14:35:19 - Logged in
+2023-06-18 14:35:38 - Follow button found
+2023-06-18 14:35:58 - Checking for login state
+2023-06-18 14:35:58 - Logged in: True
+2023-06-18 14:35:58 - Logged in
+2023-06-18 14:36:21 - Checking for login state
+2023-06-18 14:36:21 - Logged in: True
+2023-06-18 14:36:21 - Logged in
+2023-06-18 14:36:41 - Follow button found
+2023-06-18 14:36:59 - Checking for login state
+2023-06-18 14:36:59 - Logged in: True
+2023-06-18 14:36:59 - Logged in
+2023-06-18 14:37:20 - Follow button found
+2023-06-18 14:37:39 - Checking for login state
+2023-06-18 14:37:39 - Logged in: True
+2023-06-18 14:37:39 - Logged in
+2023-06-18 14:38:02 - Checking for login state
+2023-06-18 14:38:02 - Logged in: True
+2023-06-18 14:38:02 - Logged in
+2023-06-18 14:38:33 - Checking for login state
+2023-06-18 14:38:33 - Logged in: True
+2023-06-18 14:38:33 - Logged in
+2023-06-18 14:38:55 - Follow button found
+2023-06-18 14:39:30 - Checking for login state
+2023-06-18 14:39:30 - Logged in: True
+2023-06-18 14:39:30 - Logged in
+2023-06-18 14:39:54 - Checking for login state
+2023-06-18 14:39:54 - Logged in: True
+2023-06-18 14:39:54 - Logged in
+2023-06-18 14:40:19 - Checking for login state
+2023-06-18 14:40:19 - Logged in: True
+2023-06-18 14:40:19 - Logged in
+2023-06-18 14:40:43 - Checking for login state
+2023-06-18 14:40:43 - Logged in: True
+2023-06-18 14:40:43 - Logged in
+2023-06-18 14:41:07 - Checking for login state
+2023-06-18 14:41:07 - Logged in: True
+2023-06-18 14:41:07 - Logged in
+2023-06-18 14:41:27 - Follow button found
+2023-06-18 14:41:45 - Checking for login state
+2023-06-18 14:41:45 - Logged in: True
+2023-06-18 14:41:45 - Logged in
+2023-06-18 14:42:05 - Follow button found
+2023-06-18 14:42:24 - Checking for login state
+2023-06-18 14:42:25 - Logged in: True
+2023-06-18 14:42:25 - Logged in
+2023-06-18 14:42:46 - Checking for login state
+2023-06-18 14:42:47 - Logged in: True
+2023-06-18 14:42:47 - Logged in
+2023-06-18 14:43:13 - Checking for login state
+2023-06-18 14:43:13 - Logged in: True
+2023-06-18 14:43:13 - Logged in
+2023-06-18 14:43:38 - Checking for login state
+2023-06-18 14:43:39 - Logged in: True
+2023-06-18 14:43:39 - Logged in
+2023-06-18 14:44:02 - Checking for login state
+2023-06-18 14:44:02 - Logged in: True
+2023-06-18 14:44:02 - Logged in
+2023-06-18 14:44:27 - Checking for login state
+2023-06-18 14:44:27 - Logged in: True
+2023-06-18 14:44:27 - Logged in
+2023-06-18 14:44:47 - Follow button found
+2023-06-18 14:45:04 - Checking for login state
+2023-06-18 14:45:04 - Logged in: True
+2023-06-18 14:45:04 - Logged in
+2023-06-18 14:45:27 - Checking for login state
+2023-06-18 14:45:27 - Logged in: True
+2023-06-18 14:45:27 - Logged in
+2023-06-18 14:45:49 - Checking for login state
+2023-06-18 14:45:50 - Logged in: True
+2023-06-18 14:45:50 - Logged in
+2023-06-18 14:46:14 - Checking for login state
+2023-06-18 14:46:14 - Logged in: True
+2023-06-18 14:46:14 - Logged in
+2023-06-18 14:46:36 - Follow button found
+2023-06-18 14:47:09 - Checking for login state
+2023-06-18 14:47:10 - Logged in: True
+2023-06-18 14:47:10 - Logged in
+2023-06-18 14:47:33 - Checking for login state
+2023-06-18 14:47:33 - Logged in: True
+2023-06-18 14:47:33 - Logged in
+2023-06-18 14:47:58 - Checking for login state
+2023-06-18 14:47:58 - Logged in: True
+2023-06-18 14:47:58 - Logged in
+2023-06-18 14:48:22 - Checking for login state
+2023-06-18 14:48:22 - Logged in: True
+2023-06-18 14:48:22 - Logged in
+2023-06-18 14:48:51 - Checking for login state
+2023-06-18 14:48:52 - Logged in: True
+2023-06-18 14:48:52 - Logged in
+2023-06-18 14:49:10 - Follow button found
+2023-06-18 14:49:29 - Checking for login state
+2023-06-18 14:49:29 - Logged in: True
+2023-06-18 14:49:29 - Logged in
+2023-06-18 14:49:51 - Checking for login state
+2023-06-18 14:49:51 - Logged in: True
+2023-06-18 14:49:51 - Logged in
+2023-06-18 14:50:13 - Checking for login state
+2023-06-18 14:50:13 - Logged in: True
+2023-06-18 14:50:13 - Logged in
+2023-06-18 14:50:38 - Checking for login state
+2023-06-18 14:50:39 - Logged in: True
+2023-06-18 14:50:39 - Logged in
+2023-06-18 14:51:01 - Checking for login state
+2023-06-18 14:51:01 - Logged in: True
+2023-06-18 14:51:01 - Logged in
+2023-06-18 14:51:24 - Checking for login state
+2023-06-18 14:51:24 - Logged in: True
+2023-06-18 14:51:24 - Logged in
+2023-06-18 14:51:49 - Checking for login state
+2023-06-18 14:51:49 - Logged in: True
+2023-06-18 14:51:49 - Logged in
+2023-06-18 14:52:20 - Checking for login state
+2023-06-18 14:52:21 - Logged in: True
+2023-06-18 14:52:21 - Logged in
+2023-06-18 14:52:43 - Checking for login state
+2023-06-18 14:52:43 - Logged in: True
+2023-06-18 14:52:43 - Logged in
+2023-06-18 14:53:07 - Checking for login state
+2023-06-18 14:53:08 - Logged in: True
+2023-06-18 14:53:08 - Logged in
+2023-06-18 14:53:32 - Checking for login state
+2023-06-18 14:53:32 - Logged in: True
+2023-06-18 14:53:32 - Logged in
+2023-06-18 14:53:49 - Follow button found
+2023-06-18 14:54:25 - Checking for login state
+2023-06-18 14:54:25 - Logged in: True
+2023-06-18 14:54:25 - Logged in
+2023-06-18 14:54:45 - Follow button found
+2023-06-18 14:55:03 - Checking for login state
+2023-06-18 14:55:04 - Logged in: True
+2023-06-18 14:55:04 - Logged in
+2023-06-18 14:55:28 - Checking for login state
+2023-06-18 14:55:28 - Logged in: True
+2023-06-18 14:55:28 - Logged in
+2023-06-18 16:24:06 - Checking for login state
+2023-06-18 16:24:06 - Logged in: False
+2023-06-18 16:24:06 - Not logged in, exiting program
+2023-06-18 16:26:12 - Checking for login state
+2023-06-18 16:26:12 - Logged in: False
+2023-06-18 16:26:12 - Not logged in, exiting program
+2023-06-18 16:53:01 - Checking for login state
+2023-06-18 16:53:02 - Logged in: False
+2023-06-18 16:53:02 - Not logged in, exiting program
+2023-06-18 16:53:36 - Checking for login state
+2023-06-18 16:53:37 - Logged in: False
+2023-06-18 16:53:37 - Not logged in, exiting program
