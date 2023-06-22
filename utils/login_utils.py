@@ -13,13 +13,16 @@ def is_logged_in():
     profile_picture = pyautogui.locateOnScreen("./assets/profile_picture.png", confidence=constants.CONFIDENCE_LEVEL)
     login_button = pyautogui.locateOnScreen("./assets/login_button.png", confidence=constants.CONFIDENCE_LEVEL)
     search_button = pyautogui.locateOnScreen("./assets/search_bar.png", confidence=constants.CONFIDENCE_LEVEL)
+    create_button = pyautogui.locateOnScreen("./assets/create_button.png", confidence=constants.CONFIDENCE_LEVEL)
     is_logged_in = False
     if (profile_picture is not None):
         is_logged_in = True
-    if (login_button is not None):
-        is_logged_in = False
     if (search_button is not None):
         is_logged_in = True
+    if (create_button is not None):
+        is_logged_in = True
+    if (login_button is not None):
+        is_logged_in = False
     print(is_logged_in)
     print(profile_picture)
     print(search_button)

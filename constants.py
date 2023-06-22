@@ -1,19 +1,29 @@
 import random
 
 ACCOUNT_NAME = 'bbqsprinkles'
+COMMENT_TOGGLE = False
 CSV_FILE = 'assets\\accountData\\happymanbbq.csv'
 IMG_PROC = './assets/image_processing/'
 IMAGE_PATH = "food_or_nah.png"
 COMMENT_ICON_PATH = './assets/comment_icon.png'
 IMAGE_SECTION_PATH = './assets/image_processing/image_section.png'
 CONFIDENCE_LEVEL = 0.8
-MAX_FOLLOWS_PER_HOUR = 25
+MAX_FOLLOWS_PER_HOUR_MIN = 6
+MAX_FOLLOWS_PER_HOUR_MAX = 9
+
+MAX_FOLLOWS_PER_DAY_MIN = 65
+MAX_FOLLOWS_PER_DAY_MAX = 85
+
 MAX_UNFOLLOWS_PER_HOUR = 25
 MAX_LIKES_PER_HOUR = 50
-MAX_COMMENTS_PER_HOUR = 25
+MAX_COMMENTS_PER_HOUR = random.randint(15, 25)
+MAX_COMMENTS_PER_HOUR_MIN = 6
+MAX_COMMENTS_PER_HOUR_MAX = 9
 MAX_MSSG_PER_HOUR = 25
+SLEEP_TIME = random.randint(3600, 4000)
+SLEEP_TIME_DAILY = random.randint(86000, 90000)
 CLARIFAI_API_KEY = '580f314b8c9640af9c462b31396f9553'
-CLARIFAI_TOKEN = '85d0e66beb94408285b55dbb13be4edf'
+CLARIFAI_TOKEN = 'd0f6d9064a2e41a09aa2fff618478eb6'
 POST_ONE_PATH = './assets/image_processing/image_one.png'
 POST_TWO_PATH = './assets/image_processing/image_two.png'
 POST_THREE_PATH = './assets/image_processing/image_three.png'
@@ -24,7 +34,7 @@ FOOD_COMMENTS = [
     "Great pic! Wish I could taste it through the screen! 😂🍗",
     "Damn, that looks so delicious! 👏🍔",
     "Your food game is strong! 💪🔥",
-    "Nice! Would love to join in the BBQ fun next time! 🥳🍖",
+    "Looks delicious, check us out! 🥳🍖",
     "Can almost smell it from here. 👃💨",
     "This plate is a food lover's dream! ❤️",
     "Looks incredibly juicy. Great job! 🥩👌",
@@ -36,7 +46,8 @@ FOOD_COMMENTS = [
     "You are the grill master! 🔥🍴",
     "Fantastic spread! Need an extra guest at your next cookout? 😉",
     "Is there anything better than food cooked over a flame? I think not! 🍔🔥",
-    "Smoky, savory, and scrumptious! 🍖💯",
+    "Scrumptious! 🍖💯",
+    "💯💯💯",
     "Needs more BBQ Sprinkles! 🍖💯",
     "Good food, good friends, and good times. This captures it all. ❤️",
     "That looks amazing! Care to share the recipe? 😏",
@@ -46,15 +57,15 @@ FOOD_COMMENTS = [
     "Is there room for one more at this feast? 😍",
     "Now this is my kind of comfort food. 🥰🍖",
     "That's a picture-perfect meal! 📸",
-    "The smokiness from BBQ...there's just nothing like it! 🍖🔥",
-    "Those sides look as good as the BBQ! 🥗🍖",
+    "Daaang. Nice work! 🍖🔥",
     "The golden brown color on that chicken! Perfection! 🍗✨",
     "This is food art at its finest! 🖼️🍖",
     "Now that's a sight for sore eyes! 😍🍔",
     "👌🔥",
-    "BBQ done right. Looks delicious! 🌟",
+    "🔥🔥",
+    "Food done right. Looks delicious! 🌟",
     "Food bliss right there! 😇",
-    "Getting serious BBQ envy right now! 😅",
+    "Getting serious envy right now! 😅",
     "What kind of hardware you cookin with? ",
     "Check us out if you want, if not, no worries, you're killin it! 💪🔥"
 ]

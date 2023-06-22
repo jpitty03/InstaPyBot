@@ -61,9 +61,34 @@ def convert_str(s):
 class FollowTracker:
     def __init__(self):
         self.followed_count = 0
+        self.total_followed_count = 0
+        self.max_followed_count_daily = 0
+        self.max_followed_count_hourly = 0
+
+    
+    def increment_total_followed_count(self):
+        self.total_followed_count += 1
+
+    def get_total_followed_count(self):
+        return self.total_followed_count
+    
+    def set_randomize_max_follow_count_daily(self, min, max):
+        self.max_followed_count_daily = random.randint(min, max)
+
+    def get_max_followed_count_daily(self):
+        return self.max_followed_count_daily
+    
+    def reset_total_followed_count(self):
+        self.total_followed_count = 0
+
+    def get_max_followed_count_hourly(self):
+        return self.max_followed_count_hourly
 
     def increment_followed_count(self):
         self.followed_count += 1
+    
+    def set_randomize_max_follow_count_hourly(self, min, max):
+        self.max_followed_count_hourly = random.randint(min, max)
 
     def get_followed_count(self):
         return self.followed_count
@@ -71,11 +96,28 @@ class FollowTracker:
     def reset_follow_count(self):
         self.followed_count = 0
 
-    def is_following_too_many(self):
-        if self.followed_count >= constants.MAX_FOLLOWS_PER_HOUR:
+    
+
+    def is_following_too_many_hourly(self):
+        if (self.followed_count >= self.max_followed_count_hourly) and (self.calculate_time_difference() < 3600):
+            print("Followed too many people this hour")
+            print("Followed count: ", self.followed_count)
+            # print time different in HH:MM:SS format
+            print("Time difference: ", str(self.calculate_time_difference()).format('HH:MM:SS'))
+            print("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
             return False
+        
+    def is_following_too_many_daily(self):
+        if (self.total_followed_count >= self.max_followed_count_daily) and (self.calculate_time_difference() < 86400):
+            print("Followed too many people today")
+            print("Total followed count: ", self.total_followed_count)
+            print("Time difference: ", str(self.calculate_time_difference()))
+            return True
+        else:
+            return False
+
     def set_start_time(self):
         self.start_time = time.time()
 
