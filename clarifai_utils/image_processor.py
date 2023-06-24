@@ -33,7 +33,7 @@ def send_image_to_clarifai(image):
     )
 
     if post_model_outputs_response.status.code != status_code_pb2.SUCCESS:
-        print(post_model_outputs_response.status)
+        log_action(post_model_outputs_response.status)
         raise Exception("Post model outputs failed, status: " + post_model_outputs_response.status.description)
 
     output = post_model_outputs_response.outputs[0]
@@ -47,8 +47,8 @@ def get_label_matches(output):
                 matched_labels.append(concept.name)
 
     if len(matched_labels) > 2:
-        print("Matched labels:", matched_labels)
+        log_action("Matched labels:", matched_labels)
         return True
     else:
-        print("No matching labels found")
+        log_action("No matching labels found")
         return False

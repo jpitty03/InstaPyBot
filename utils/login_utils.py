@@ -23,10 +23,10 @@ def is_logged_in():
         is_logged_in = True
     if (login_button is not None):
         is_logged_in = False
-    print(is_logged_in)
-    print(profile_picture)
-    print(search_button)
-    print(login_button)
+    log_action(is_logged_in)
+    log_action(profile_picture)
+    log_action(search_button)
+    log_action(login_button)
     
     # Log the login status
     log_action(f"Logged in: {is_logged_in}")

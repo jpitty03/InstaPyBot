@@ -18,7 +18,7 @@ def go_to_user_profile(profileUrl):
     pyautogui.press('enter')
     time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
     username = profileUrl.split('/')[-1]
-    print("Navigated to user profile: " + username)
+    log_action("Navigated to user profile: " + username)
 
     return username
 
@@ -56,28 +56,28 @@ def find_and_click_search_bar():
         log_action("Clicked on the search bar")
     else:
         log_action("Search bar image not found.")
-        print("Search bar image not found.")
+        log_action("Search bar image not found.")
 
 def find_comment_button():
     # Find the comment button image on the screen
-    print("Finding comment button image")
+    log_action("Finding comment button image")
     comment_icon_location = pyautogui.locateOnScreen(constants.COMMENT_ICON_PATH, 
                              confidence=constants.CONFIDENCE_LEVEL,
                              region=constants.COMMENT_SEARCH_REGION)
     
     if comment_icon_location is not None:
-        print("Found comment icon, moving mouse to it")
+        log_action("Found comment icon, moving mouse to it")
         comment_icon_center = pyautogui.center(comment_icon_location)
         pyautogui.moveTo(x = (comment_icon_center[0] + 45), y = comment_icon_center[1],
                          duration=random.uniform(0.5, 1.0),
                          tween=pyautogui.easeOutQuad)
         time.sleep(random.uniform(0.2, 0.5))
-        print("Clicking on comment icon")
+        log_action("Clicking on comment icon")
         pyautogui.click()
         time.sleep(random.uniform(0.2, 0.5))
 
     else:
-        print("Comment icon not found")
+        log_action("Comment icon not found")
     
     
 

@@ -10,6 +10,7 @@ from utils.log_utils import log_action
 import constants
 from PIL import Image
 import pytesseract
+from utils.log_utils import log_action
 
 
 def get_followers_following():
@@ -100,20 +101,18 @@ class FollowTracker:
 
     def is_following_too_many_hourly(self):
         if (self.followed_count >= self.max_followed_count_hourly) and (self.calculate_time_difference() < 3600):
-            print("Followed too many people this hour")
-            print("Followed count: ", self.followed_count)
-            # print time different in HH:MM:SS format
-            print("Time difference: ", str(self.calculate_time_difference()).format('HH:MM:SS'))
-            print("Time difference: ", str(self.calculate_time_difference()))
+            log_action("Followed too many people this hour")
+            log_action("Followed count: ", self.followed_count)
+            log_action("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
             return False
         
     def is_following_too_many_daily(self):
         if (self.total_followed_count >= self.max_followed_count_daily) and (self.calculate_time_difference() < 86400):
-            print("Followed too many people today")
-            print("Total followed count: ", self.total_followed_count)
-            print("Time difference: ", str(self.calculate_time_difference()))
+            log_action("Followed too many people today")
+            log_action("Total followed count: ", self.total_followed_count)
+            log_action("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
             return False
@@ -134,7 +133,7 @@ class FollowTracker:
 
 
 def follow_user(user):
-    print("Following user: " + user)
+    log_action("Following user: " + user)
 
     # Click the follow button
     follow_button_location = pyautogui.locateOnScreen("./assets/follow_button.png", 
@@ -143,17 +142,17 @@ def follow_user(user):
     following_button_location = pyautogui.locateOnScreen("./assets/following_button.png", 
                                                       confidence=constants.CONFIDENCE_LEVEL,
                                                       region=constants.FOLLOW_BUTTON_REGION)
-    print("Follow button location: ", follow_button_location)
+    log_action("Follow button location: ", follow_button_location)
     if (follow_button_location is not None) and (is_account_not_private_or_no_posts() is True):
-        print("Follow button found")
+        log_action("Follow button found")
         log_action("Follow button found")
         follow_button_center = pyautogui.center(follow_button_location)
 
-        print("Moving mouse to follow button")
+        log_action("Moving mouse to follow button")
         pyautogui.moveTo(follow_button_center, duration=random.uniform(0.5, 1.0), 
                          tween=pyautogui.easeOutQuad)
         time.sleep(random.uniform(0.2, 0.5))
-        print("Clicking on follow button")
+        log_action("Clicking on follow button")
         pyautogui.click()
         time.sleep(random.uniform(2, 3.5))
 
@@ -162,13 +161,13 @@ def follow_user(user):
                                                       confidence=constants.CONFIDENCE_LEVEL,
                                                       region=constants.FOLLOW_BUTTON_REGION)
         if following_button_location is not None:
-            print("User followed successfully")
+            log_action("User followed successfully")
             return True
         else:
-            print("User not followed something happened")
+            log_action("User not followed something happened")
             return False
     if following_button_location is not None:
-        print("Already following " + user + " or profile is private")
+        log_action("Already following " + user + " or profile is private")
         return False
 
     
@@ -177,10 +176,10 @@ def is_account_not_private_or_no_posts():
     pyautogui.sleep(3)
     posts_icon_location = find_posts_icon_location()
     if posts_icon_location is not None:
-        print("Posts icon found")
+        log_action("Posts icon found")
         return True
     else:
-        print("Posts icon not found, account is private or has no posts")
+        log_action("Posts icon not found, account is private or has no posts")
         return False
     
     # center of posts icon: 980, 396
@@ -261,11 +260,11 @@ def comment_on_post():
     # Find/Click on comment button
 
     # Copy/paste random comment from FOOD_COMMENTS list
-    print("Copying comment")
+    log_action("Copying comment")
     pyperclip.copy(random.choice(constants.FOOD_COMMENTS))
     time.sleep(random.uniform(0.2, 0.5))
 
-    print("Pasting comment")
+    log_action("Pasting comment")
     pyautogui.hotkey('ctrl', 'v')
     time.sleep(random.uniform(0.2, 0.5))
     pyautogui.press('enter')

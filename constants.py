@@ -1,7 +1,7 @@
 import random
 
 ACCOUNT_NAME = 'bbqsprinkles'
-COMMENT_TOGGLE = False
+COMMENT_TOGGLE = True
 CSV_FILE = 'assets\\accountData\\happymanbbq.csv'
 IMG_PROC = './assets/image_processing/'
 IMAGE_PATH = "food_or_nah.png"
@@ -20,10 +20,10 @@ MAX_COMMENTS_PER_HOUR = random.randint(15, 25)
 MAX_COMMENTS_PER_HOUR_MIN = 6
 MAX_COMMENTS_PER_HOUR_MAX = 9
 MAX_MSSG_PER_HOUR = 25
-SLEEP_TIME = random.randint(3600, 4000)
+SLEEP_TIME_HOURLY = random.randint(3600, 4000)
 SLEEP_TIME_DAILY = random.randint(86000, 90000)
 CLARIFAI_API_KEY = '580f314b8c9640af9c462b31396f9553'
-CLARIFAI_TOKEN = 'd0f6d9064a2e41a09aa2fff618478eb6'
+CLARIFAI_TOKEN = '09b66c0d794d438ead5785b0c7df08e1'
 POST_ONE_PATH = './assets/image_processing/image_one.png'
 POST_TWO_PATH = './assets/image_processing/image_two.png'
 POST_THREE_PATH = './assets/image_processing/image_three.png'

@@ -10,7 +10,7 @@ class InstagramProfileScraper:
     def scrape_counts(self):
         # response = requests.get(self.url)
         # soup = BeautifulSoup(response.content, 'html.parser')
-        # print(soup)
+        # log_action(soup)
         # meta_tag = soup.find('meta', attrs={'name': 'description'})
         # counts_text = meta_tag['content']
 
