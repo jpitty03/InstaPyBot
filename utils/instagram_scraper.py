@@ -2,28 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+# Deprecated
+
 class InstagramProfileScraper:
     def __init__(self, username):
         self.username = username
         self.url = f"https://www.instagram.com/{username}/"
 
     def scrape_counts(self):
-        # response = requests.get(self.url)
-        # soup = BeautifulSoup(response.content, 'html.parser')
-        # log_action(soup)
-        # meta_tag = soup.find('meta', attrs={'name': 'description'})
-        # counts_text = meta_tag['content']
-
-        # follower_count_match = re.search(r'([\d.,]+) \w+ Followers', counts_text)
-        # if follower_count_match is None:
-        #     follower_count_match = re.search(r'([\d.,]+) \w+ Follower', counts_text)
-        # follower_count = follower_count_match.group(1).replace(',', '')
-
-        # following_count_match = re.search(r'([\d.,]+) \w+ Following', counts_text)
-        # following_count = following_count_match.group(1).replace(',', '')
-
-        # return follower_count, following_count
-
         response = requests.get(self.url)
         soup = BeautifulSoup(response.content, 'html.parser')
 
