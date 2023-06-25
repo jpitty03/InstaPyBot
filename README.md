@@ -1,6 +1,6 @@
 # InstaPyBot
 
-Disclaimer: Active development in process. Some features/settings may not work properly.
+:warning: **Active development in process. Some features/settings may not work properly.**
 
 ## Description
 InstaPyBot is an Instagram bot that follows users based on a CSV file and comments on pictures. It utilizes OCR to capture data on the screen, Pyautogui to mimic realistic movement, and Tesseract to capture screenshots and use AI to determine what to comment.
