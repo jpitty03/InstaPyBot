@@ -19,6 +19,7 @@ InstaPyBot is an Instagram bot that follows users based on a CSV file and commen
 1. Create a Python environment using the command: `python -m venv env`.
 2. Activate the environment by running: `env\Scripts\activate`.
 3. Install the required dependencies by running: `python -m pip install -r requirements.txt`.
+4. Fill in the .env file, if commenting based on post content grab a Clarifai token/api key.
 
 ## Usage
 1. Navigate to the InstaPyBot directory: `cd InstaPyBot`.
