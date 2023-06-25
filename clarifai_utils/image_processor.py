@@ -3,6 +3,7 @@ from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
 from clarifai_grpc.grpc.api.status import status_code_pb2
 from utils.log_utils import log_action
 import constants
+import os
 
 
 # Establish a connection to the Clarifai API
@@ -10,7 +11,7 @@ channel = ClarifaiChannel.get_grpc_channel()
 stub = service_pb2_grpc.V2Stub(channel)
 
 
-metadata = (('authorization', 'Key ' + constants.CLARIFAI_TOKEN),)
+metadata = (('authorization', 'Key ' + os.getenv('CLARIFAI_TOKEN')),)
 
 userDataObject = resources_pb2.UserAppIDSet(user_id='clarifai', app_id='main')
 
