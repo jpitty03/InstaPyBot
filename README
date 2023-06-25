@@ -1,1 +1,10 @@
+Create python environment: python -m venv env
+
+Activate environment: env\Scripts\activate
+Install requirements: python -m pip install -r requirements.txt
+Download Git:
 Download Tesseract: https://github.com/UB-Mannheim/tesseract/wiki
+
+cd InstaPyBot
+env\Scripts\activate
+python main.py
