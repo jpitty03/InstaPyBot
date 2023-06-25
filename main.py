@@ -11,6 +11,9 @@ from clarifai_utils.image_processor import send_image_to_clarifai, get_label_mat
 import pyautogui
 import threading
 import keyboard
+from dotenv import load_dotenv
+
+load_dotenv()
 
 run_program = True
 
@@ -53,6 +56,7 @@ x = 0
 # x = len(usernames)
 # log_action (x)
 while x < 500 and run_program == True:
+    print("Starting program")
     # Refresh the page
     if follow_tracker.is_following_too_many_hourly() == True:
         log_action("Followed too many users, sleeping for 1 hour")
@@ -187,4 +191,5 @@ while x < 500 and run_program == True:
     x += 1
 
 log_action("Finished")
+print("Finished")
 
