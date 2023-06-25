@@ -1,6 +1,8 @@
 import random
+import os
+from dotenv import load_dotenv
 
-ACCOUNT_NAME = 'bbqsprinkles'
+ACCOUNT_NAME = os.getenv("ACCOUNT_NAME")
 COMMENT_TOGGLE = True
 CSV_FILE = 'assets\\accountData\\happymanbbq.csv'
 IMG_PROC = './assets/image_processing/'
@@ -22,8 +24,8 @@ MAX_COMMENTS_PER_HOUR_MAX = 9
 MAX_MSSG_PER_HOUR = 25
 SLEEP_TIME_HOURLY = random.randint(3600, 4000)
 SLEEP_TIME_DAILY = random.randint(86000, 90000)
-CLARIFAI_API_KEY = '580f314b8c9640af9c462b31396f9553'
-CLARIFAI_TOKEN = '09b66c0d794d438ead5785b0c7df08e1'
+CLARIFAI_API_KEY = os.getenv("CLARIFAI_API_KEY")
+CLARIFAI_TOKEN = os.getenv("CLARIFAI_TOKEN")
 POST_ONE_PATH = './assets/image_processing/image_one.png'
 POST_TWO_PATH = './assets/image_processing/image_two.png'
 POST_THREE_PATH = './assets/image_processing/image_three.png'
