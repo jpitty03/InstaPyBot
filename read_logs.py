@@ -1,45 +1,35 @@
-import os
 import requests
 import time
-from dotenv import load_dotenv
 
+def download_file(url, destination):
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an exception if there's an error
 
-# If you're running this program on a remote machine,
-# you can use this function to download the logs file 
-# from the remote machine to your local machine
-# Add the file to a google drive folder and share the folder
+    with open(destination, 'wb') as file:
+        file.write(response.content)
 
-def download_file(url, destination, start_byte):
-    headers = {'Range': f'bytes={start_byte}-'}
-    response = requests.get(url, headers=headers, stream=True)
-    with open(destination, 'ab') as file:
-        for chunk in response.iter_content(chunk_size=1024):
-            if chunk:
-                file.write(chunk)
-
-def print_latest_content(file_path):
+def get_file_lines(file_path):
     with open(file_path, 'r') as file:
-        file.seek(0, 2)  # Move the file pointer to the end
-        while True:
-            line = file.readline()
-            if not line:
-                time.sleep(0.1)  # Sleep for a short interval if no new content is available
-                continue
-            print(line.strip())
+        lines = file.readlines()
+    return len(lines)
 
-# Specify the URL to download the file from
-download_url = os.getenv("LOG_FILE_URL")
-print(download_url)
-# Specify the path where the file will be saved
+# Specify the URL of the file
+file_url = "https://drive.google.com/uc?id=1ktU9FF9TCxGlmraZCh1vDv74LskosBBk&export=download"
 file_path = "remote_logs.txt"
 
 # Download the file initially
-download_file(download_url, file_path, 0)
+download_file(file_url, file_path)
+last_line_count = get_file_lines(file_path)
 
-# Continuously download and print the latest content
+# Continuously compare and print the new content
 while True:
-    print_latest_content(file_path)
-    file_size = os.path.getsize(file_path)
-    download_file(download_url, file_path, file_size)
+    time.sleep(10)  # Pause for 10 second before checking for updates
+    download_file(file_url, file_path)
+    current_line_count = get_file_lines(file_path)
 
-
+    if current_line_count > last_line_count:
+        with open(file_path, 'r') as file:
+            new_lines = file.readlines()[last_line_count:]
+            for line in new_lines:
+                print(line.strip())
+        last_line_count = current_line_count
