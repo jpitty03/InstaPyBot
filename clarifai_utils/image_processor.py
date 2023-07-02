@@ -4,6 +4,9 @@ from clarifai_grpc.grpc.api.status import status_code_pb2
 from utils.log_utils import log_action
 import constants
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # Establish a connection to the Clarifai API
