@@ -61,13 +61,16 @@ while x < 500 and run_program == True:
     # Refresh the page
     if follow_tracker.is_following_too_many_hourly() == True:
         log_action("Followed too many users, sleeping for 1 hour")
+        log_action("Time elapsed: " + str(follow_tracker.calculate_time_difference()) + " seconds")
+
+        # Sleep for 1 hour, log time to restart
+        time_to_start = follow_tracker.get_start_time() + constants.SLEEP_TIME_HOURLY
+        log_action('Starting again at: ' + str(datetime.datetime.fromtimestamp(time_to_start).strftime('%m/%d %H:%M:%S')))
+
         time.sleep(constants.SLEEP_TIME_HOURLY)
         follow_tracker.reset_follow_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
-        log_action("Time elapsed: " + str(follow_tracker.calculate_time_difference()) + " seconds")
-        time_to_start = follow_tracker.get_start_time() + constants.SLEEP_TIME_HOURLY
-        log_action('Starting again at: ' + str(datetime.datetime.fromtimestamp(time_to_start).strftime('%m/%d %H:%M:%S')))
         follow_tracker.set_start_time()
     else:
         log_action("Current follow within 1 hour: " + str(follow_tracker.get_followed_count()))
@@ -75,13 +78,16 @@ while x < 500 and run_program == True:
 
     if follow_tracker.is_following_too_many_daily() == True:
         log_action("Daily follow limit reached, sleeping for 24 hours")
+
+        # Sleep for 1 hour, log time to restart
+        time_to_start = follow_tracker.get_start_time() + constants.SLEEP_TIME_DAILY
+        log_action('Starting again at: ' + str(datetime.datetime.fromtimestamp(time_to_start).strftime('%m/%d %H:%M:%S')))
+
         time.sleep(constants.SLEEP_TIME_DAILY)
         follow_tracker.reset_follow_count()
         follow_tracker.reset_total_followed_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
-        time_to_start = follow_tracker.get_start_time() + constants.SLEEP_TIME_DAILY
-        log_action('Starting again at: ' + str(datetime.datetime.fromtimestamp(time_to_start).strftime('%m/%d %H:%M:%S')))
         follow_tracker.set_start_time()
     else:
         log_action("Current follow within 24 hours: " + str(follow_tracker.get_total_followed_count()))
