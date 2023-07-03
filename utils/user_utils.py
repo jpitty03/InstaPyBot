@@ -1,3 +1,5 @@
+import csv
+import os
 import random
 import re
 import time
@@ -62,9 +64,11 @@ def convert_str(s):
 class FollowTracker:
     def __init__(self):
         self.followed_count = 0
+        self.unfollowed_count = 0
         self.total_followed_count = 0
         self.max_followed_count_daily = 0
         self.max_followed_count_hourly = 0
+        self.max_unfollowed_count_hourly = 0
 
     
     def increment_total_followed_count(self):
@@ -91,13 +95,26 @@ class FollowTracker:
     def set_randomize_max_follow_count_hourly(self, min, max):
         self.max_followed_count_hourly = random.randint(min, max)
 
+    def set_randomize_max_unfollow_count_hourly(self, min, max):
+        self.max_unfollowed_count_hourly = random.randint(min, max)
+
+    def set_unfollow_profileUrls(self, profileUrls):
+        self.unfollow_profileUrls = profileUrls
+
+    def get_unfollow_profileUrls(self, x):
+        return self.unfollow_profileUrls[x]
+    
+    def increment_unfollowed_count(self):
+        self.unfollowed_count += 1
+
+    def get_unfollowed_count(self):
+        return self.unfollowed_count
+
     def get_followed_count(self):
         return self.followed_count
     
     def reset_follow_count(self):
         self.followed_count = 0
-
-    
 
     def is_following_too_many_hourly(self):
         if (self.followed_count >= self.max_followed_count_hourly) and (self.calculate_time_difference() < 3600):
@@ -116,6 +133,15 @@ class FollowTracker:
             return True
         else:
             return False
+        
+    def is_unfollowing_too_many_hourly(self):
+        if (self.followed_count >= self.max_unfollowed_count_daily) and (self.calculate_time_difference() < 3600):
+            log_action("Unfollowed too many people this hour")
+            log_action("Unfollowed count: ", self.unfollowed_count)
+            log_action("Time difference: ", str(self.calculate_time_difference()))
+            return True
+        else:
+            return False
 
     def set_start_time(self):
         self.start_time = time.time()
@@ -130,6 +156,61 @@ class FollowTracker:
         current_time = time.time()
         time_difference = current_time - self.start_time
         return time_difference
+    
+
+def unfollow_users(unfollow_user_url):
+    # Start unfollowing
+    log_action("Starting unfollow method")
+
+    # Send ctrl l
+    pyautogui.hotkey('ctrl', 'l')
+    time.sleep(random.uniform(1.0, 2.0))
+    # Go to user profile
+    print("Going to user profile " + unfollow_user_url)
+    pyperclip.copy(unfollow_user_url)
+    time.sleep(random.uniform(1.0, 2.0))
+    pyautogui.hotkey('ctrl', 'v')
+    time.sleep(random.uniform(1.0, 2.0))
+    pyautogui.press('enter')
+    time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
+
+    following_button_location = pyautogui.locateOnScreen("./assets/following_button.png", 
+                                                      confidence=constants.CONFIDENCE_LEVEL,
+                                                      region=constants.FOLLOW_BUTTON_REGION)
+    
+    if following_button_location is not None:
+        following_button_center = pyautogui.center(following_button_location)
+        pyautogui.moveTo(following_button_center[0], following_button_center[1], 
+                                    duration=random.uniform(0.5, 1.0), 
+                                    tween=pyautogui.easeOutQuad)
+        pyautogui.click()
+        pyautogui.sleep(random.uniform(1.0, 2.0))
+        unfollow_button_location = pyautogui.locateOnScreen("./assets/unfollow_button.png", 
+                                                      confidence=constants.CONFIDENCE_LEVEL,
+                                                      region=constants.UNFOLLOW_BUTTON_REGION)
+        
+        if unfollow_button_location is not None:
+            unfollow_button_center = pyautogui.center(unfollow_button_location)
+            pyautogui.moveTo(unfollow_button_center[0], unfollow_button_center[1], 
+                                    duration=random.uniform(0.5, 1.0), 
+                                    tween=pyautogui.easeOutQuad)
+            pyautogui.click()
+            pyautogui.sleep(random.uniform(1.0, 2.0))
+            log_action("Sleeping for 2 seconds")
+            pyautogui.press('f5')
+            pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
+            return True
+
+        else:
+            log_action("Unfollow button not found")
+            log_action("Sleeping for 2 seconds")
+            time.sleep(2)
+            return False
+    else:
+        log_action("Following button not found")
+        log_action("Sleeping for 2 seconds")
+        time.sleep(2)
+        return False
 
 
 def follow_user(user):

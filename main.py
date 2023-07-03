@@ -2,8 +2,9 @@ import csv
 import random
 import time
 import numpy as np
+import pyperclip
 import constants
-from utils.user_utils import FollowTracker, comment_on_post, convert_image_to_bytes, find_posts_icon_location, follow_user, get_followers_following, is_account_not_private_or_no_posts, save_first_three_posts, save_image_section
+from utils.user_utils import FollowTracker, comment_on_post, convert_image_to_bytes, find_posts_icon_location, follow_user, get_followers_following, is_account_not_private_or_no_posts, save_first_three_posts, save_image_section, unfollow_users
 from utils.search_utils import find_comment_button, go_to_user_profile
 from utils.login_utils import is_logged_in
 from utils.log_utils import log_action
@@ -40,6 +41,8 @@ log_action(follow_tracker.get_start_time())
 pyautogui.sleep(2)
 follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
 follow_tracker.set_randomize_max_follow_count_daily(constants.MAX_FOLLOWS_PER_DAY_MIN, constants.MAX_FOLLOWS_PER_DAY_MAX)
+follow_tracker.set_randomize_max_unfollow_count_hourly(constants.MAX_UNFOLLOWS_PER_HOUR_MIN, constants.MAX_UNFOLLOWS_PER_HOUR_MAX)
+
 log_action(follow_tracker.get_max_followed_count_daily())
 log_action(follow_tracker.get_max_followed_count_hourly())
 
@@ -51,6 +54,16 @@ with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
     for row in reader:
         profileUrl = row['profileUrl']
         profileUrls.append(profileUrl)
+
+unfollow_profileUrls = []
+if constants.UNFOLLOW_TOGGLE == True:
+    with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
+        # Read the CSV file
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            username = row['Username']
+            unfollow_profileUrls.append('https://www.instagram.com/' + username)
+follow_tracker.set_unfollow_profileUrls(unfollow_profileUrls)
 
 
 x = 0
@@ -106,6 +119,22 @@ while x < 500 and run_program == True:
 
 
     # Meat and potatoes
+
+    '''
+    To use the unfollow method, set the UNFOLLOW_TOGGLE to True in constants.py
+    Run /follower_following_utils/compare_follower_following.py to get a list of users to unfollow
+    This exports a csv file with the users to unfollow
+    '''
+    if constants.UNFOLLOW_TOGGLE == True:
+        print("Starting unfollow method")
+        # check if we should unfollow
+        if follow_tracker.is_unfollowing_too_many_hourly() == False:
+            did_we_unfollow = unfollow_users(follow_tracker.get_unfollow_profileUrls(x))
+            if did_we_unfollow == True:
+                follow_tracker.increment_unfollowed_count()
+                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x) + 
+                           "Total count:", follow_tracker.get_unfollowed_count())
+            
     username = go_to_user_profile(profileUrls[x])
     if username == constants.ACCOUNT_NAME:
         log_action("Found" + constants.ACCOUNT_NAME +", skipping")
