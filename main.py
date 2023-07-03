@@ -57,7 +57,7 @@ with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
 
 unfollow_profileUrls = []
 if constants.UNFOLLOW_TOGGLE == True:
-    with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
+    with open('follower_following_utils\\not_following_back.csv', 'r', newline='', encoding='latin-1') as csvfile:
         # Read the CSV file
         reader = csv.DictReader(csvfile)
         for row in reader:
