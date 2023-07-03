@@ -55,15 +55,15 @@ with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
         profileUrl = row['profileUrl']
         profileUrls.append(profileUrl)
 
-unfollow_profileUrls = []
+unfollow_profile_usernames = []
 if constants.UNFOLLOW_TOGGLE == True:
     with open('follower_following_utils\\not_following_back.csv', 'r', newline='', encoding='latin-1') as csvfile:
         # Read the CSV file
         reader = csv.DictReader(csvfile)
         for row in reader:
             username = row['Username']
-            unfollow_profileUrls.append('https://www.instagram.com/' + username)
-follow_tracker.set_unfollow_profileUrls(unfollow_profileUrls)
+            unfollow_profile_usernames.append( username)
+follow_tracker.set_unfollow_profileUrls(unfollow_profile_usernames)
 
 
 x = 0
@@ -136,8 +136,8 @@ while x < 500 and run_program == True:
             did_we_unfollow = unfollow_users(follow_tracker.get_unfollow_profileUrls(x))
             if did_we_unfollow == True:
                 follow_tracker.increment_unfollowed_count()
-                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x) + 
-                           "Total count:", follow_tracker.get_unfollowed_count())
+                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x) + '\n' +
+                           "Total count: ", follow_tracker.get_unfollowed_count())
             
     username = go_to_user_profile(profileUrls[x])
     if username == constants.ACCOUNT_NAME:

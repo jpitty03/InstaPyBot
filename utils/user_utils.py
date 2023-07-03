@@ -158,7 +158,7 @@ class FollowTracker:
         return time_difference
     
 
-def unfollow_users(unfollow_user_url):
+def unfollow_users(unfollow_username):
     # Start unfollowing
     log_action("Starting unfollow method")
 
@@ -166,8 +166,8 @@ def unfollow_users(unfollow_user_url):
     pyautogui.hotkey('ctrl', 'l')
     time.sleep(random.uniform(1.0, 2.0))
     # Go to user profile
-    print("Going to user profile " + unfollow_user_url)
-    pyperclip.copy(unfollow_user_url)
+    print("Going to user profile " + unfollow_username)
+    pyperclip.copy('https://www.instagram.com/' + unfollow_username)
     time.sleep(random.uniform(1.0, 2.0))
     pyautogui.hotkey('ctrl', 'v')
     time.sleep(random.uniform(1.0, 2.0))
@@ -199,6 +199,9 @@ def unfollow_users(unfollow_user_url):
             log_action("Sleeping for 2 seconds")
             pyautogui.press('f5')
             pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
+            print("Removing " + unfollow_username + " from not_following_back.csv")
+            remove_user_from_unfollow_csv(unfollow_username)
+
             return True
 
         else:
@@ -211,6 +214,29 @@ def unfollow_users(unfollow_user_url):
         log_action("Sleeping for 2 seconds")
         time.sleep(2)
         return False
+
+def remove_user_from_unfollow_csv(username):
+    rows = []
+    row_index_to_remove = -1
+
+    with open('./follower_following_utils/not_following_back.csv', 'r', encoding='latin-1') as csvfile:
+        reader = csv.reader(csvfile)
+        rows = list(reader)
+
+        for i, row in enumerate(rows):
+            if row[0] == username:
+                row_index_to_remove = i
+                break
+    if row_index_to_remove >= 0:
+        rows.pop(row_index_to_remove)
+
+        with open('./follower_following_utils/not_following_back.csv', 'w', encoding='latin-1') as csvfile:
+            writer = csv.writer(csvfile, lineterminator='\n')
+            writer.writerows(rows)
+            print("Removed " + username + " from not_following_back.csv")
+    else:
+        print("Could not find " + username + " in not_following_back.csv")
+
 
 
 def follow_user(user):
