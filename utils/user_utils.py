@@ -135,7 +135,7 @@ class FollowTracker:
             return False
         
     def is_unfollowing_too_many_hourly(self):
-        if (self.followed_count >= self.max_unfollowed_count_daily) and (self.calculate_time_difference() < 3600):
+        if (self.followed_count >= self.max_unfollowed_count_hourly) and (self.calculate_time_difference() < 3600):
             log_action("Unfollowed too many people this hour")
             log_action("Unfollowed count: ", self.unfollowed_count)
             log_action("Time difference: ", str(self.calculate_time_difference()))
