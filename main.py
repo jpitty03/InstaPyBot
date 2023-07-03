@@ -84,6 +84,8 @@ while x < 500 and run_program == True:
         follow_tracker.reset_follow_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
+        follow_tracker.set_randomize_max_unfollow_count_hourly(constants.MAX_UNFOLLOWS_PER_HOUR_MIN, constants.MAX_UNFOLLOWS_PER_HOUR_MAX)
+        log_action("Unfollow count reset")
         follow_tracker.set_start_time()
     else:
         log_action("Current follow within 1 hour: " + str(follow_tracker.get_followed_count()))
@@ -101,6 +103,8 @@ while x < 500 and run_program == True:
         follow_tracker.reset_total_followed_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
+        follow_tracker.set_randomize_max_unfollow_count_hourly(constants.MAX_UNFOLLOWS_PER_HOUR_MIN, constants.MAX_UNFOLLOWS_PER_HOUR_MAX)
+        log_action("Unfollow count reset")
         follow_tracker.set_start_time()
     else:
         log_action("Current follow within 24 hours: " + str(follow_tracker.get_total_followed_count()))
