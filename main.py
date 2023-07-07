@@ -4,7 +4,7 @@ import time
 import numpy as np
 import pyperclip
 import constants
-from utils.user_utils import FollowTracker, comment_on_post, convert_image_to_bytes, find_posts_icon_location, follow_user, get_followers_following, is_account_not_private_or_no_posts, save_first_three_posts, save_image_section, unfollow_users
+from utils.user_utils import *
 from utils.search_utils import find_comment_button, go_to_user_profile
 from utils.login_utils import is_logged_in
 from utils.log_utils import log_action
@@ -47,13 +47,13 @@ log_action(follow_tracker.get_max_followed_count_daily())
 log_action(follow_tracker.get_max_followed_count_hourly())
 
 # Read the CSV file
-profileUrls = []
-with open(constants.CSV_FILE, 'r', newline='', encoding='latin-1') as csvfile:
+follow_usernames = []
+with open(constants.CSV_FILE_PATH + constants.CSV_FILE_NAME, 'r', newline='', encoding='latin-1') as csvfile:
     # Read the CSV file
     reader = csv.DictReader(csvfile)
     for row in reader:
-        profileUrl = row['profileUrl']
-        profileUrls.append(profileUrl)
+        username = row['username']
+        follow_usernames.append(username)
 
 unfollow_profile_usernames = []
 if constants.UNFOLLOW_TOGGLE == True:
@@ -79,9 +79,9 @@ while x < 500 and run_program == True:
         # Sleep for 1 hour, log time to restart
         time_to_start = follow_tracker.get_start_time() + constants.SLEEP_TIME_HOURLY
         log_action('Starting again at: ' + str(datetime.datetime.fromtimestamp(time_to_start).strftime('%m/%d %H:%M:%S')))
-
         time.sleep(constants.SLEEP_TIME_HOURLY)
         follow_tracker.reset_follow_count()
+        follow_tracker.reset_unfollow_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
         follow_tracker.set_randomize_max_unfollow_count_hourly(constants.MAX_UNFOLLOWS_PER_HOUR_MIN, constants.MAX_UNFOLLOWS_PER_HOUR_MAX)
@@ -100,6 +100,7 @@ while x < 500 and run_program == True:
 
         time.sleep(constants.SLEEP_TIME_DAILY)
         follow_tracker.reset_follow_count()
+        follow_tracker.reset_unfollow_count()
         follow_tracker.reset_total_followed_count()
         follow_tracker.set_randomize_max_follow_count_hourly(constants.MAX_FOLLOWS_PER_HOUR_MIN, constants.MAX_FOLLOWS_PER_HOUR_MAX)
         log_action("Follow count reset")
@@ -139,7 +140,7 @@ while x < 500 and run_program == True:
                 log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x) + '\n' +
                            "Total count: ", follow_tracker.get_unfollowed_count())
             
-    username = go_to_user_profile(profileUrls[x])
+    username = go_to_user_profile(follow_usernames[x])
     if username == constants.ACCOUNT_NAME:
         log_action("Found" + constants.ACCOUNT_NAME +", skipping")
         x += 1
@@ -170,6 +171,7 @@ while x < 500 and run_program == True:
 
     # Follow user
     did_we_follow = follow_user(username)
+    remove_user_from_csv(username, constants.CSV_FILE_PATH + constants.CSV_FILE_NAME, constants.FOLLOW_HEADERS)
     log_action("Did we follow? " + str(did_we_follow))
     if did_we_follow == True:
         follow_tracker.increment_followed_count()
