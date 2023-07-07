@@ -203,7 +203,7 @@ def unfollow_users(unfollow_username):
             pyautogui.press('f5')
             pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
             print("Removing " + unfollow_username + " from " + constants.UNFOLLOW_CSV_NAME)
-            remove_user_from_csv(unfollow_username, constants.UNFOLLOW_CSV_NAME, constants.UNFOLLOW_HEADERS)
+            remove_user_from_csv(unfollow_username, constants.UNFOLLOW_CSV_PATH + constants.UNFOLLOW_CSV_NAME, constants.UNFOLLOW_HEADERS)
 
             return True
 
