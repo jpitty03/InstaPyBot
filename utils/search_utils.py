@@ -7,17 +7,16 @@ from utils.log_utils import log_action
 import constants
 from utils.user_utils import comment_on_post
 
-def go_to_user_profile(profileUrl):
+def go_to_user_profile(username):
     # Press CTRL + L to focus on the URL bar
     pyautogui.hotkey('ctrl', 'l')
     time.sleep(random.uniform(0.2, 0.5))
-    pyperclip.copy(profileUrl)
+    pyperclip.copy('https://www.instagram.com/' + username)
     time.sleep(random.uniform(0.2, 0.5))
     pyautogui.hotkey('ctrl', 'v')
     time.sleep(random.uniform(0.2, 0.5))
     pyautogui.press('enter')
     time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
-    username = profileUrl.split('/')[-1]
     log_action("Navigated to user profile: " + username)
 
     return username

@@ -7,7 +7,12 @@ COMMENT_TOGGLE = True
 UNFOLLOW_TOGGLE = True
 MAX_UNFOLLOWS_PER_HOUR_MIN = 6
 MAX_UNFOLLOWS_PER_HOUR_MAX = 9
-CSV_FILE = 'assets\\accountData\\happymanbbq.csv'
+FOLLOW_HEADERS = ['profileUrl', 'username', 'fullName', 'imgUrl', 'id', 'isPrivate', 'isVerified', 'query', 'timestamp']
+CSV_FILE_PATH = 'assets/accountData/'
+CSV_FILE_NAME = 'happymanbbq.csv'
+UNFOLLOW_HEADERS = ['Username']
+UNFOLLOW_CSV_PATH = './follower_following_utils/'
+UNFOLLOW_CSV_NAME = 'not_following_back.csv'
 IMG_PROC = './assets/image_processing/'
 IMAGE_PATH = "food_or_nah.png"
 COMMENT_ICON_PATH = './assets/comment_icon.png'
@@ -33,8 +38,46 @@ POST_ONE_PATH = './assets/image_processing/image_one.png'
 POST_TWO_PATH = './assets/image_processing/image_two.png'
 POST_THREE_PATH = './assets/image_processing/image_three.png'
 FOOD_COMMENTS = [
-    "TEST COMMENT 1😍🔥🍖",
-    "TEST COMMENT 2🍽️🔥",
+    "Are you freaking kidding me?!? 😍🔥🍖",
+    "Now that's looking tasty! 🍽️🔥",
+    "Mouthwatering to say the least. What's the recipe? 🤤",
+    "Great pic! Wish I could taste it through the screen! 😂🍗",
+    "Damn, that looks so delicious! 👏🍔",
+    "Your food game is strong! 💪🔥",
+    "Looks delicious, check us out! 🥳🍖",
+    "Can almost smell it from here. 👃💨",
+    "This plate is a food lover's dream! ❤️",
+    "Looks incredibly juicy. Great job! 🥩👌",
+    "This picture alone has me drooling. 😋",
+    "Can't wait to try this at our next cookout! Thanks for the inspiration! 🌟",
+    "It's eatin' time somewhere, right? 🌎🔥",
+    "Meats and good times. Nothing beats that combo! 🎉",
+    "Wish I could reach in and grab a bite! 😆",
+    "You are the grill master! 🔥🍴",
+    "Fantastic spread! Need an extra guest at your next cookout? 😉",
+    "Is there anything better than food cooked over a flame? I think not! 🍔🔥",
+    "Scrumptious! 🍖💯",
+    "💯💯💯",
+    "Needs more BBQ Sprinkles! 🍖💯",
+    "Good food, good friends, and good times. This captures it all. ❤️",
+    "That looks amazing! Care to share the recipe? 😏",
+    "Delicious! I can almost hear the sizzle from here. 🔥",
+    "Cooked to perfection! Bravo! 👏👏",
+    "Foodie goals right there! 🏆🔥",
+    "Is there room for one more at this feast? 😍",
+    "Now this is my kind of comfort food. 🥰🍖",
+    "That's a picture-perfect meal! 📸",
+    "Daaang. Nice work! 🍖🔥",
+    "The golden brown color on that chicken! Perfection! 🍗✨",
+    "This is food art at its finest! 🖼️🍖",
+    "Now that's a sight for sore eyes! 😍🍔",
+    "👌🔥",
+    "🔥🔥",
+    "Food done right. Looks delicious! 🌟",
+    "Food bliss right there! 😇",
+    "Getting serious envy right now! 😅",
+    "What kind of hardware you cookin with? ",
+    "Check us out if you want, if not, no worries, you're killin it! 💪🔥"
 ]
 FOOD_LABELS = [
     'food',
@@ -60,7 +103,10 @@ UNFOLLOW_BUTTON_REGION = (752, 672, 1147, 723)
 FOLLOWER_FOLLOWING_REGION = (965, 196, 407, 40)
 COMMENT_SEARCH_REGION = (28, 967, 1867, 54)
 
+
+#########################################################
 # Image coordinates for 1080p monitor with Highlights
+# Deprecated, using a better method to find posts
 ONE_LEFT = 652
 ONE_TOP = 625
 ONE_WIDTH = 959 - ONE_LEFT
@@ -83,6 +129,7 @@ NON_HL_ARRAY = [
 ]
 
 # Image coordinates for 1080p monitor without Highlights
+# Deprecated, using a better method to find posts
 ONE_LEFT_NOHL = 653
 ONE_TOP_NOHL = 441
 ONE_WIDTH_NOHL = 967 - ONE_LEFT_NOHL
@@ -103,7 +150,6 @@ HL_ARRAY = [
     TWO_LEFT_NOHL, TWO_TOP_NOHL, TWO_WIDTH_NOHL, TWO_HEIGHT_NOHL,
     THREE_LEFT_NOHL, THREE_TOP_NOHL, THREE_WIDTH_NOHL, THREE_HEIGHT_NOHL
 ]
-
 #########################################################
 
 SEARCH_X = random.randint(161, 400) # I know, random in a CONSTANT file,

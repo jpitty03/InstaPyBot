@@ -109,6 +109,9 @@ class FollowTracker:
 
     def get_unfollowed_count(self):
         return self.unfollowed_count
+    
+    def reset_unfollow_count(self):
+        self.unfollowed_count = 0
 
     def get_followed_count(self):
         return self.followed_count
@@ -199,8 +202,8 @@ def unfollow_users(unfollow_username):
             log_action("Sleeping for 2 seconds")
             pyautogui.press('f5')
             pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
-            print("Removing " + unfollow_username + " from not_following_back.csv")
-            remove_user_from_unfollow_csv(unfollow_username)
+            print("Removing " + unfollow_username + " from " + constants.UNFOLLOW_CSV_NAME)
+            remove_user_from_csv(unfollow_username, constants.UNFOLLOW_CSV_NAME, constants.UNFOLLOW_HEADERS)
 
             return True
 
@@ -215,28 +218,27 @@ def unfollow_users(unfollow_username):
         time.sleep(2)
         return False
 
-def remove_user_from_unfollow_csv(username):
-    rows = []
-    row_index_to_remove = -1
 
-    with open('./follower_following_utils/not_following_back.csv', 'r', encoding='latin-1') as csvfile:
-        reader = csv.reader(csvfile)
-        rows = list(reader)
+def remove_user_from_csv(username, csv_file_path, headers):
+    headers_lowercase = [header.lower() for header in headers]
+    username_index = headers_lowercase.index('username')
 
-        for i, row in enumerate(rows):
-            if row[0] == username:
-                row_index_to_remove = i
-                break
-    if row_index_to_remove >= 0:
-        rows.pop(row_index_to_remove)
+    with open(csv_file_path, 'r', encoding='utf-8') as readFile:
+        reader = csv.reader(readFile)
+        next(reader, None)  # skip the headers
+        lines_before = list(reader)
 
-        with open('./follower_following_utils/not_following_back.csv', 'w', encoding='latin-1') as csvfile:
-            writer = csv.writer(csvfile, lineterminator='\n')
-            writer.writerows(rows)
-            print("Removed " + username + " from not_following_back.csv")
+    lines_after = [line for line in lines_before if line[username_index] != username]
+
+    with open(csv_file_path, 'w', newline='', encoding='utf-8') as writeFile:
+        writer = csv.writer(writeFile)
+        writer.writerow(headers)  # write the header
+        writer.writerows(lines_after)
+
+    if len(lines_before) == len(lines_after):
+        print(f"User '{username}' was not found in '{csv_file_path}'.")
     else:
-        print("Could not find " + username + " in not_following_back.csv")
-
+        print(f"User '{username}' was successfully removed in '{csv_file_path}'.")
 
 
 def follow_user(user):
@@ -288,10 +290,7 @@ def is_account_not_private_or_no_posts():
     else:
         log_action("Posts icon not found, account is private or has no posts")
         return False
-    
-    # center of posts icon: 980, 396
-    # top of image section: 980, 422
-    # pixels from posts to top of image: 26
+
 
 def find_posts_icon_location():
     posts_icon_location = pyautogui.locateOnScreen("./assets/posts_icon.png",
@@ -299,7 +298,6 @@ def find_posts_icon_location():
                                                     confidence=constants.CONFIDENCE_LEVEL)
     return posts_icon_location
     
-
 
 def convert_image_to_bytes(image_path):
     with open(image_path, 'rb') as f:
@@ -362,6 +360,7 @@ def save_first_three_posts(posts_icon_location):
                                            image_three_height))
     
     return image_one_center, image_two_center, image_three_center
+
 
 def comment_on_post():
     # Find/Click on comment button
