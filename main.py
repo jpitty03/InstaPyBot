@@ -159,6 +159,11 @@ while x < 500 and run_program == True:
 
     posts_count, follower_count, following_count = counts
 
+    if (int(following_count) == 0) or (int(follower_count) == 0):
+        log_action("Cannot divide by zero, skipping")
+        x += 1
+        continue
+
     if ((int(follower_count) / int(following_count) > 2) or 
         (int(following_count) < 100) or 
         (int(posts_count) < 15) or 
