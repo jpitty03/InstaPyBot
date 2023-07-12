@@ -14,7 +14,7 @@ def get_file_lines(file_path):
     return len(lines)
 
 # Specify the URL of the file
-file_url = "https://drive.google.com/uc?id=1ktU9FF9TCxGlmraZCh1vDv74LskosBBk&export=download"
+file_url = SPECIFY_PATH
 file_path = "remote_logs.txt"
 
 # Download the file initially
