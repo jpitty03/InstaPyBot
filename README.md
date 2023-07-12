@@ -25,7 +25,7 @@ InstaPyBot is an Instagram bot that follows users based on a CSV file and commen
 ## Usage
 1. Navigate to the InstaPyBot directory: `cd InstaPyBot`.
 2. Activate the Python environment: `env\Scripts\activate`.
-3. Run the program using: `python main.py`.
+3. Run the program using: `python main.py`
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
