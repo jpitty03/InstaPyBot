@@ -137,8 +137,8 @@ while x < 500 and run_program == True:
             did_we_unfollow = unfollow_users(follow_tracker.get_unfollow_profileUrls(x))
             if did_we_unfollow == True:
                 follow_tracker.increment_unfollowed_count()
-                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x) + '\n' +
-                           "Total count: ", follow_tracker.get_unfollowed_count())
+                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x))
+                log_action("Unfollowed count: " + str(follow_tracker.get_unfollowed_count()) + "/" + str(follow_tracker.max_unfollowed_count_hourly()))
             
     username = go_to_user_profile(follow_usernames[x])
     if username == constants.ACCOUNT_NAME:
@@ -181,8 +181,8 @@ while x < 500 and run_program == True:
     if did_we_follow == True:
         follow_tracker.increment_followed_count()
         follow_tracker.increment_total_followed_count()
-        log_action("Total followed count:", follow_tracker.get_total_followed_count())
-        log_action("Followed count:", follow_tracker.get_followed_count())
+        log_action("Total followed count: " + str(follow_tracker.get_total_followed_count()) + "/" + str(follow_tracker.get_max_followed_count_daily()))
+        log_action("Followed count:" + str(follow_tracker.get_followed_count()) + "/ " + str(follow_tracker.get_max_followed_count_hourly()))
         log_action("Refreshing page")
         pyautogui.hotkey('ctrl', 'r')
         time.sleep(random.uniform(3.0, 5.0))

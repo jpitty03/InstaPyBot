@@ -122,7 +122,7 @@ class FollowTracker:
     def is_following_too_many_hourly(self):
         if (self.followed_count >= self.max_followed_count_hourly) and (self.calculate_time_difference() < 3600):
             log_action("Followed too many people this hour")
-            log_action("Followed count: ", self.followed_count)
+            log_action("Hourly Followed count: ", str(self.followed_count) + "/" + str(self.max_followed_count_hourly))
             log_action("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
@@ -131,7 +131,7 @@ class FollowTracker:
     def is_following_too_many_daily(self):
         if (self.total_followed_count >= self.max_followed_count_daily) and (self.calculate_time_difference() < 86400):
             log_action("Followed too many people today")
-            log_action("Total followed count: ", self.total_followed_count)
+            log_action("Faily Followed count: " + str(self.total_followed_count) + "/" + str(self.max_followed_count_daily))
             log_action("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
@@ -140,7 +140,7 @@ class FollowTracker:
     def is_unfollowing_too_many_hourly(self):
         if (self.unfollowed_count >= self.max_unfollowed_count_hourly) and (self.calculate_time_difference() < 3600):
             log_action("Unfollowed too many people this hour")
-            log_action("Unfollowed count: ", self.unfollowed_count)
+            log_action("Hourly Unfollowed count: " +  str(self.unfollowed_count) + "/" + str(self.max_unfollowed_count_hourly))
             log_action("Time difference: ", str(self.calculate_time_difference()))
             return True
         else:
@@ -169,7 +169,7 @@ def unfollow_users(unfollow_username):
     pyautogui.hotkey('ctrl', 'l')
     time.sleep(random.uniform(1.0, 2.0))
     # Go to user profile
-    print("Going to user profile " + unfollow_username)
+    log_action("Going to user profile " + unfollow_username)
     pyperclip.copy('https://www.instagram.com/' + unfollow_username)
     time.sleep(random.uniform(1.0, 2.0))
     pyautogui.hotkey('ctrl', 'v')
@@ -202,7 +202,7 @@ def unfollow_users(unfollow_username):
             log_action("Sleeping for 2 seconds")
             pyautogui.press('f5')
             pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
-            print("Removing " + unfollow_username + " from " + constants.UNFOLLOW_CSV_NAME)
+            log_action("Removing " + unfollow_username + " from " + constants.UNFOLLOW_CSV_NAME)
             remove_user_from_csv(unfollow_username, constants.UNFOLLOW_CSV_PATH + constants.UNFOLLOW_CSV_NAME, constants.UNFOLLOW_HEADERS)
 
             return True
@@ -236,9 +236,9 @@ def remove_user_from_csv(username, csv_file_path, headers):
         writer.writerows(lines_after)
 
     if len(lines_before) == len(lines_after):
-        print(f"User '{username}' was not found in '{csv_file_path}'.")
+        log_action(f"User '{username}' was not found in '{csv_file_path}'.")
     else:
-        print(f"User '{username}' was successfully removed in '{csv_file_path}'.")
+        log_action(f"User '{username}' was successfully removed in '{csv_file_path}'.")
 
 
 def follow_user(user):
@@ -253,7 +253,6 @@ def follow_user(user):
                                                       region=constants.FOLLOW_BUTTON_REGION)
     log_action("Follow button location: ", follow_button_location)
     if (follow_button_location is not None) and (is_account_not_private_or_no_posts() is True):
-        log_action("Follow button found")
         log_action("Follow button found")
         follow_button_center = pyautogui.center(follow_button_location)
 
