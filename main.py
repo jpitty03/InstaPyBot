@@ -146,6 +146,7 @@ while x < 500 and run_program == True:
         x += 1
 
     log_action("Searching for " + username)
+    remove_user_from_csv(username, constants.CSV_FILE_PATH + constants.CSV_FILE_NAME, constants.FOLLOW_HEADERS)
     pyautogui.sleep(2)
     time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
 
@@ -176,7 +177,6 @@ while x < 500 and run_program == True:
 
     # Follow user
     did_we_follow = follow_user(username)
-    remove_user_from_csv(username, constants.CSV_FILE_PATH + constants.CSV_FILE_NAME, constants.FOLLOW_HEADERS)
     log_action("Did we follow? " + str(did_we_follow))
     if did_we_follow == True:
         follow_tracker.increment_followed_count()
