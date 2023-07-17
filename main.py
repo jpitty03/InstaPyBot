@@ -15,22 +15,13 @@ import keyboard
 from dotenv import load_dotenv
 import datetime
 
+MINIMUM_POST_COUNT = 15
+MINIMUM_FOLLOWER_COUNT = 100
+MINIMUM_FOLLOWING_COUNT = 100
+FOLLOWER_FOLLOWING_RATIO_MAX = 2
+FOLLOWER_FOLLOWING_RATIO_MAX = 4
+
 load_dotenv()
-
-run_program = True
-
-def exit_program():
-    global run_program
-    while True:
-        if keyboard.is_pressed('q'):  # if key 'q' is pressed
-            run_program = False
-            break  # finish the loop
-        else:
-            pass
-        time.sleep(0.5)  # delay to reduce CPU usage
-
-exit_thread = threading.Thread(target=exit_program)
-exit_thread.start()
 
 # Initialize the follow tracker
 follow_tracker = FollowTracker()
@@ -67,9 +58,7 @@ follow_tracker.set_unfollow_profileUrls(unfollow_profile_usernames)
 
 
 x = 0
-# x = len(usernames)
-# log_action (x)
-while x < 500 and run_program == True:
+while x <= len(follow_usernames):
     print("Starting program")
     # Refresh the page
     if follow_tracker.is_following_too_many_hourly() == True:
@@ -165,14 +154,15 @@ while x < 500 and run_program == True:
         x += 1
         continue
 
-    if ((int(follower_count) / int(following_count) > 2) or 
-        (int(following_count) < 100) or 
-        (int(posts_count) < 15) or 
-        (int(following_count) / int(follower_count) > 4)):
+
+    if ((int(follower_count) / int(following_count) > FOLLOWER_FOLLOWING_RATIO_MAX) or 
+        (int(following_count) < MINIMUM_FOLLOWING_COUNT) or 
+        (int(posts_count) < MINIMUM_POST_COUNT) or 
+        (int(following_count) / int(follower_count) > FOLLOWER_FOLLOWING_RATIO_MAX)):
         log_action("Follower count more than double following count, or low following/posts, skipping")
         x += 1
         continue
-    log_action("Follower count less than double following count, or high following/posts, continuing")
+    log_action("Criteria matches, continuing to follow")
 
 
     # Follow user
