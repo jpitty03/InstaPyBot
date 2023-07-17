@@ -175,7 +175,7 @@ while x <= len(follow_usernames):
         follow_tracker.increment_followed_count()
         follow_tracker.increment_total_followed_count()
         log_action("Total followed count: " + str(follow_tracker.get_total_followed_count()) + "/" + str(follow_tracker.get_max_followed_count_daily()))
-        log_action("Followed count:" + str(follow_tracker.get_followed_count()) + "/ " + str(follow_tracker.get_max_followed_count_hourly()))
+        log_action("Followed count:" + str(follow_tracker.get_followed_count()) + "/" + str(follow_tracker.get_max_followed_count_hourly()))
         log_action("Refreshing page")
         pyautogui.hotkey('ctrl', 'r')
         time.sleep(random.uniform(3.0, 5.0))
