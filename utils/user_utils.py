@@ -166,6 +166,7 @@ class FollowTracker:
 
 def unfollow_users(unfollow_username):
     # Start unfollowing
+    log_action("______________________________________________________________")
     log_action("Starting unfollow method")
     remove_user_from_csv(unfollow_username, constants.UNFOLLOW_CSV_PATH + constants.UNFOLLOW_CSV_NAME, constants.UNFOLLOW_HEADERS)
 
@@ -190,6 +191,7 @@ def unfollow_users(unfollow_username):
                                                       region=constants.FOLLOW_BUTTON_REGION)
     
     if following_button_location is not None:
+        log_action("Following button found, moving to unfollow")
         following_button_center = pyautogui.center(following_button_location)
         pyautogui.moveTo(following_button_center[0], following_button_center[1], 
                                     duration=random.uniform(0.5, 1.0), 
@@ -201,26 +203,33 @@ def unfollow_users(unfollow_username):
                                                       region=constants.UNFOLLOW_BUTTON_REGION)
         
         if unfollow_button_location is not None:
+            log_action("Unfollow button found, Moving to unfollow")
             unfollow_button_center = pyautogui.center(unfollow_button_location)
             pyautogui.moveTo(unfollow_button_center[0], unfollow_button_center[1], 
                                     duration=random.uniform(0.5, 1.0), 
                                     tween=pyautogui.easeOutQuad)
             pyautogui.click()
             pyautogui.sleep(random.uniform(1.0, 2.0))
-            log_action("Sleeping for 2 seconds")
             pyautogui.press('f5')
             pyautogui.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
-            log_action("Removing " + unfollow_username + " from " + constants.UNFOLLOW_CSV_NAME)
+            follow_button_location = pyautogui.locateOnScreen("./assets/follow_button.png", 
+                                                      confidence=constants.CONFIDENCE_LEVEL,
+                                                      region=constants.FOLLOW_BUTTON_REGION)
+            if follow_button_location is not None:
+                log_action("Follow button found, unfollow successful")
+            else:
+                log_action("Follow button not found, something happend")
+                log_action("______________________________________________________________")
             return True
 
         else:
             log_action("Unfollow button not found")
-            log_action("Sleeping for 2 seconds")
+            log_action("______________________________________________________________")
             time.sleep(2)
             return False
     else:
         log_action("Following button not found")
-        log_action("Sleeping for 2 seconds")
+        log_action("______________________________________________________________")
         time.sleep(2)
         return False
 
