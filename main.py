@@ -122,12 +122,15 @@ while x <= len(follow_usernames):
     if constants.UNFOLLOW_TOGGLE == True:
         print("Starting unfollow method")
         # check if we should unfollow
-        if follow_tracker.is_unfollowing_too_many_hourly() == False:
-            did_we_unfollow = unfollow_users(follow_tracker.get_unfollow_profileUrls(x))
-            if did_we_unfollow == True:
-                follow_tracker.increment_unfollowed_count()
-                log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x))
-                log_action("Unfollowed count: " + str(follow_tracker.get_unfollowed_count()) + "/" + str(follow_tracker.max_unfollowed_count_hourly()))
+        try:
+            if follow_tracker.is_unfollowing_too_many_hourly() == False:
+                did_we_unfollow = unfollow_users(follow_tracker.get_unfollow_profileUrls(x))
+                if did_we_unfollow == True:
+                    follow_tracker.increment_unfollowed_count()
+                    log_action("Unfollowed user: " + follow_tracker.get_unfollow_profileUrls(x))
+                    log_action("Unfollowed count: " + str(follow_tracker.get_unfollowed_count()) + "/" + str(follow_tracker.get_max_unfollowed_count_hourly()))
+        except IndexError:
+            log_action("No more users to unfollow")
             
     username = go_to_user_profile(follow_usernames[x])
     if username == constants.ACCOUNT_NAME:

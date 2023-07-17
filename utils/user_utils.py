@@ -98,6 +98,9 @@ class FollowTracker:
     def set_randomize_max_unfollow_count_hourly(self, min, max):
         self.max_unfollowed_count_hourly = random.randint(min, max)
 
+    def get_max_unfollowed_count_hourly(self):
+        return self.max_unfollowed_count_hourly
+
     def set_unfollow_profileUrls(self, profileUrls):
         self.unfollow_profileUrls = profileUrls
 
