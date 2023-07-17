@@ -181,6 +181,10 @@ def unfollow_users(unfollow_username):
     following_button_location = pyautogui.locateOnScreen("./assets/following_button.png", 
                                                       confidence=constants.CONFIDENCE_LEVEL,
                                                       region=constants.FOLLOW_BUTTON_REGION)
+    if following_button_location is None:
+        following_button_location = pyautogui.locateOnScreen("./assets/following_button_2.png", 
+                                                      confidence=constants.CONFIDENCE_LEVEL,
+                                                      region=constants.FOLLOW_BUTTON_REGION)
     
     if following_button_location is not None:
         following_button_center = pyautogui.center(following_button_location)
@@ -250,6 +254,11 @@ def follow_user(user):
     following_button_location = pyautogui.locateOnScreen("./assets/following_button.png", 
                                                       confidence=constants.CONFIDENCE_LEVEL,
                                                       region=constants.FOLLOW_BUTTON_REGION)
+    if following_button_location is None:
+        following_button_location = pyautogui.locateOnScreen("./assets/following_button_2.png", 
+                                                      confidence=constants.CONFIDENCE_LEVEL,
+                                                      region=constants.FOLLOW_BUTTON_REGION)
+        
     log_action("Follow button location: ", follow_button_location)
     if (follow_button_location is not None) and (is_account_not_private_or_no_posts() is True):
         log_action("Follow button found")
@@ -267,6 +276,11 @@ def follow_user(user):
         following_button_location = pyautogui.locateOnScreen("./assets/following_button.png", 
                                                       confidence=constants.CONFIDENCE_LEVEL,
                                                       region=constants.FOLLOW_BUTTON_REGION)
+        if following_button_location is None:
+            following_button_location = pyautogui.locateOnScreen("./assets/following_button_2.png", 
+                                                        confidence=constants.CONFIDENCE_LEVEL,
+                                                        region=constants.FOLLOW_BUTTON_REGION)
+        
         if following_button_location is not None:
             log_action("User followed successfully")
             return True
