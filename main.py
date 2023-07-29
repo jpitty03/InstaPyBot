@@ -187,38 +187,40 @@ while x <= len(follow_usernames):
             # Grabbing posts icon location
             
             #Check image section for food first
-            log_action("Checking image section for food")
+            log_action("Checking image section for food and liking first image")
             save_image_section(posts_icon_location)
+
+            # Liking first image if we followed the user and profile is not private
+            pyautogui.moveTo(image_one_center[0], image_one_center[1], -100,
+                            duration=random.uniform(0.5, 1.0),
+                            tween=pyautogui.easeOutQuad)
+            time.sleep(random.uniform(0.7, 1.5))
+            pyautogui.click()
+            # Find and click heart button
+            pyautogui.sleep(random.uniform(1, 2))
+            like_heart_location = pyautogui.locateOnScreen("./assets/like_heart.png",
+                                                                region=constants.HEART_LIKE_LOCATION,
+                                                                confidence=0.8)
+            if like_heart_location is not None:
+                log_action("Found heart, liking first image")
+                pyautogui.moveTo(pyautogui.center(like_heart_location), 
+                                duration=random.uniform(0.5, 1.0),
+                                tween=pyautogui.easeOutQuad)
+                pyautogui.sleep(random.uniform(1, 2))
+                pyautogui.click()
+            
+            # Press escape button to exit of image
+            pyautogui.press('esc')
+            pyautogui.sleep(random.uniform(1, 2))
+
+
+
             if get_label_matches(send_image_to_clarifai(convert_image_to_bytes(constants.IMAGE_SECTION_PATH))) == True:
                 log_action("Found food in image section, commenting")
 
                 # Check images for food
                 log_action("Checking images for food")
                 image_one_center, image_two_center, image_three_center = save_first_three_posts(posts_icon_location)
-
-                # Like first image
-                pyautogui.moveTo(image_one_center[0], image_one_center[1], -100,
-                                duration=random.uniform(0.5, 1.0),
-                                tween=pyautogui.easeOutQuad)
-                time.sleep(random.uniform(0.7, 1.5))
-                pyautogui.click()
-                # Find and click heart button
-                pyautogui.sleep(random.uniform(1, 2))
-                like_heart_location = pyautogui.locateOnScreen("./assets/like_heart.png",
-                                                                    region=constants.HEART_LIKE_LOCATION,
-                                                                    confidence=0.8)
-                if like_heart_location is not None:
-                    log_action("Found heart, liking first image")
-                    pyautogui.moveTo(pyautogui.center(like_heart_location), 
-                                    duration=random.uniform(0.5, 1.0),
-                                    tween=pyautogui.easeOutQuad)
-                    pyautogui.sleep(random.uniform(1, 2))
-                    pyautogui.click()
-                
-                # Press escape button to exit of image
-                pyautogui.press('esc')
-                pyautogui.sleep(random.uniform(1, 2))
-
 
                 # If matches, comment
                 if get_label_matches(send_image_to_clarifai(convert_image_to_bytes(constants.POST_ONE_PATH))) == True:
