@@ -182,9 +182,11 @@ while x <= len(follow_usernames):
     
     # Should we start commenting?
     if (constants.COMMENT_TOGGLE == True):
+        # Grabbing posts icon location
         posts_icon_location = find_posts_icon_location()
         if (is_account_followable() == True) and (did_we_follow == True) and (posts_icon_location is not None):
-            # Grabbing posts icon location
+
+            image_one_center, image_two_center, image_three_center = save_first_three_posts(posts_icon_location)
             
             #Check image section for food first
             log_action("Checking image section for food and liking first image")
@@ -220,7 +222,6 @@ while x <= len(follow_usernames):
 
                 # Check images for food
                 log_action("Checking images for food")
-                image_one_center, image_two_center, image_three_center = save_first_three_posts(posts_icon_location)
 
                 # If matches, comment
                 if get_label_matches(send_image_to_clarifai(convert_image_to_bytes(constants.POST_ONE_PATH))) == True:
