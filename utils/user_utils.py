@@ -272,7 +272,7 @@ def follow_user(user):
                                                       region=constants.FOLLOW_BUTTON_REGION)
         
     log_action("Follow button location: ", follow_button_location)
-    if (follow_button_location is not None) and (is_account_not_private_or_no_posts() is True):
+    if (follow_button_location is not None) and (is_account_followable() is True):
         log_action("Follow button found")
         follow_button_center = pyautogui.center(follow_button_location)
 
@@ -302,26 +302,29 @@ def follow_user(user):
     if following_button_location is not None:
         log_action("Already following " + user + " or profile is private")
         return False
-
     
-def is_account_not_private_or_no_posts():
-    # Find Posts icon
-    pyautogui.sleep(3)
-    posts_icon_location = find_posts_icon_location()
-    if posts_icon_location is not None:
-        log_action("Posts icon found")
-        return True
-    else:
-        log_action("Posts icon not found, account is private or has no posts")
-        return False
-
-
 def find_posts_icon_location():
     posts_icon_location = pyautogui.locateOnScreen("./assets/posts_icon.png",
                                                     region=constants.POSTS_SEARCH_REGION,
                                                     confidence=constants.CONFIDENCE_LEVEL)
     return posts_icon_location
     
+def is_account_followable():
+    # Find Posts icon
+    pyautogui.sleep(3)
+    posts_icon_location = find_posts_icon_location()
+    private_account_icon_location = pyautogui.locateOnScreen("./assets/private_account_icon.png",
+                                                    region=constants.POSTS_SEARCH_REGION,
+                                                    confidence=constants.CONFIDENCE_LEVEL)
+    if posts_icon_location is not None:
+        log_action("Posts icon found")
+        return True
+    elif posts_icon_location is None and constants.FOLLOW_PRIVATE_PROFILES is True and private_account_icon_location is not None:
+        log_action("Posts icon not found, account is private, but following anyway")
+        return True
+    else:
+        log_action("Posts icon not found or has no posts, and not set to follow private profiles.")
+        return False
 
 def convert_image_to_bytes(image_path):
     with open(image_path, 'rb') as f:

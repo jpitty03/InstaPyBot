@@ -182,10 +182,10 @@ while x <= len(follow_usernames):
     
     # Should we start commenting?
     if (constants.COMMENT_TOGGLE == True):
-        if (is_account_not_private_or_no_posts() == True) and (did_we_follow == True):
+        posts_icon_location = find_posts_icon_location()
+        if (is_account_followable() == True) and (did_we_follow == True) and (posts_icon_location is not None):
             # Grabbing posts icon location
-            posts_icon_location = find_posts_icon_location()
-
+            
             #Check image section for food first
             log_action("Checking image section for food")
             save_image_section(posts_icon_location)
@@ -195,6 +195,30 @@ while x <= len(follow_usernames):
                 # Check images for food
                 log_action("Checking images for food")
                 image_one_center, image_two_center, image_three_center = save_first_three_posts(posts_icon_location)
+
+                # Like first image
+                pyautogui.moveTo(image_one_center[0], image_one_center[1], -100,
+                                duration=random.uniform(0.5, 1.0),
+                                tween=pyautogui.easeOutQuad)
+                time.sleep(random.uniform(0.7, 1.5))
+                pyautogui.click()
+                # Find and click heart button
+                pyautogui.sleep(random.uniform(1, 2))
+                like_heart_location = pyautogui.locateOnScreen("./assets/like_heart.png",
+                                                                    region=constants.HEART_LIKE_LOCATION,
+                                                                    confidence=0.8)
+                if like_heart_location is not None:
+                    log_action("Found heart, liking first image")
+                    pyautogui.moveTo(pyautogui.center(like_heart_location), 
+                                    duration=random.uniform(0.5, 1.0),
+                                    tween=pyautogui.easeOutQuad)
+                    pyautogui.sleep(random.uniform(1, 2))
+                    pyautogui.click()
+                
+                # Press escape button to exit of image
+                pyautogui.press('esc')
+                pyautogui.sleep(random.uniform(1, 2))
+
 
                 # If matches, comment
                 if get_label_matches(send_image_to_clarifai(convert_image_to_bytes(constants.POST_ONE_PATH))) == True:
@@ -229,6 +253,8 @@ while x <= len(follow_usernames):
                     time.sleep(random.uniform(constants.LOAD_TIME_MIN, constants.LOAD_TIME_MAX))
                     find_comment_button()
                     comment_on_post()
+        else:
+            log_action("Not following user, or no posts to comment on, skipping")
 
 
         #End of loop
