@@ -192,7 +192,7 @@ while x <= len(follow_usernames):
             save_image_section(posts_icon_location)
 
             # Liking first image if we followed the user and profile is not private
-            pyautogui.moveTo(image_one_center[0], image_one_center[1], -100,
+            pyautogui.moveTo(image_one_center[0], image_one_center[1] -100,
                             duration=random.uniform(0.5, 1.0),
                             tween=pyautogui.easeOutQuad)
             time.sleep(random.uniform(0.7, 1.5))
