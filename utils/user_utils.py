@@ -123,7 +123,7 @@ class FollowTracker:
         self.followed_count = 0
 
     def is_following_too_many_hourly(self):
-        if (self.followed_count >= self.max_followed_count_hourly) and (self.calculate_time_difference() < 3600):
+        if (self.followed_count >= self.max_followed_count_hourly):
             log_action("Followed too many people this hour")
             log_action("Hourly Followed count: ", str(self.followed_count) + "/" + str(self.max_followed_count_hourly))
             log_action("Time difference: ", str(self.calculate_time_difference()))
@@ -132,7 +132,7 @@ class FollowTracker:
             return False
         
     def is_following_too_many_daily(self):
-        if (self.total_followed_count >= self.max_followed_count_daily) and (self.calculate_time_difference() < 86400):
+        if (self.total_followed_count >= self.max_followed_count_daily):
             log_action("Followed too many people today")
             log_action("Faily Followed count: " + str(self.total_followed_count) + "/" + str(self.max_followed_count_daily))
             log_action("Time difference: ", str(self.calculate_time_difference()))
@@ -141,7 +141,7 @@ class FollowTracker:
             return False
         
     def is_unfollowing_too_many_hourly(self):
-        if (self.unfollowed_count >= self.max_unfollowed_count_hourly) and (self.calculate_time_difference() < 3600):
+        if (self.unfollowed_count >= self.max_unfollowed_count_hourly):
             log_action("Unfollowed too many people this hour")
             log_action("Hourly Unfollowed count: " +  str(self.unfollowed_count) + "/" + str(self.max_unfollowed_count_hourly))
             log_action("Time difference: ", str(self.calculate_time_difference()))

@@ -53,9 +53,8 @@ if constants.UNFOLLOW_TOGGLE == True:
         reader = csv.DictReader(csvfile)
         for row in reader:
             username = row['Username']
-            unfollow_profile_usernames.append( username)
+            unfollow_profile_usernames.append(username)
 follow_tracker.set_unfollow_profileUrls(unfollow_profile_usernames)
-
 
 x = 0
 while x <= len(follow_usernames):
@@ -77,7 +76,7 @@ while x <= len(follow_usernames):
         log_action("Unfollow count reset")
         follow_tracker.set_start_time()
     else:
-        log_action("Current follow within 1 hour: " + str(follow_tracker.get_followed_count()))
+        log_action("Current follow within 1 hour: " + str(follow_tracker.get_followed_count()) + '/' + str(follow_tracker.get_max_followed_count_hourly()))
         log_action("Time elapsed: " + str(follow_tracker.calculate_time_difference()) + " seconds")
 
     if follow_tracker.is_following_too_many_daily() == True:
