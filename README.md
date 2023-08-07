@@ -23,6 +23,7 @@ InstaPyBot is an Instagram bot that follows users based on a CSV file and commen
 3. Install the required dependencies by running: `python -m pip install -r requirements.txt`.
 4. Fill in the .env file, if commenting based on post content grab a Clarifai token/api key.
 5. Use Phantombuster to scrape a user profile for followers. (Use a dummy account for scraping)
+6. I'm using Instagram on Dark mode, and since it's looking for the images, it will only work on Dark mode.
 
 ## Usage
 1. Navigate to the InstaPyBot directory: `cd InstaPyBot`.
