@@ -15,11 +15,10 @@ import keyboard
 from dotenv import load_dotenv
 import datetime
 
+FOLLOWER_FOLLOWING_RATIO_MIN = .5
+FOLLOWER_FOLLOWING_RATIO_MAX = 3
+MINIMUM_FOLLOWING_COUNT = 200
 MINIMUM_POST_COUNT = 15
-MINIMUM_FOLLOWER_COUNT = 100
-MINIMUM_FOLLOWING_COUNT = 100
-FOLLOWER_FOLLOWING_RATIO_MAX = 2
-FOLLOWER_FOLLOWING_RATIO_MAX = 4
 
 load_dotenv()
 
@@ -151,20 +150,23 @@ while x <= len(follow_usernames):
 
     posts_count, follower_count, following_count = counts
 
-    if (int(following_count) == 0) or (int(follower_count) == 0):
-        log_action("Cannot divide by zero, skipping")
+    try:
+        if ((int(following_count) < MINIMUM_FOLLOWING_COUNT) or
+            (int(posts_count) < MINIMUM_POST_COUNT)):
+            print('Profile did not meet minimum post or following count')
+            x += 1
+            continue
+
+        elif ((int(follower_count) / int(following_count) < FOLLOWER_FOLLOWING_RATIO_MIN) or (int(follower_count) / int(following_count) > FOLLOWER_FOLLOWING_RATIO_MAX)):
+            print('Follower to Following ratio was less than ' + str(FOLLOWER_FOLLOWING_RATIO_MIN) +  ' or greater than ' + str(FOLLOWER_FOLLOWING_RATIO_MAX))
+            print('Ratio: ' + (str(int(follower_count) / int(following_count))))
+            x += 1
+            continue
+
+    except ZeroDivisionError:
+        print('Cannot divide by zero')
         x += 1
         continue
-
-
-    if ((int(follower_count) / int(following_count) > FOLLOWER_FOLLOWING_RATIO_MAX) or 
-        (int(following_count) < MINIMUM_FOLLOWING_COUNT) or 
-        (int(posts_count) < MINIMUM_POST_COUNT) or 
-        (int(following_count) / int(follower_count) > FOLLOWER_FOLLOWING_RATIO_MAX)):
-        log_action("Follower count more than double following count, or low following/posts, skipping")
-        x += 1
-        continue
-    log_action("Criteria matches, continuing to follow")
 
 
     # Follow user
