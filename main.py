@@ -153,13 +153,13 @@ while x <= len(follow_usernames):
     try:
         if ((int(following_count) < MINIMUM_FOLLOWING_COUNT) or
             (int(posts_count) < MINIMUM_POST_COUNT)):
-            print('Profile did not meet minimum post or following count')
+            log_action('Profile did not meet minimum post or following count')
             x += 1
             continue
 
         elif ((int(follower_count) / int(following_count) < FOLLOWER_FOLLOWING_RATIO_MIN) or (int(follower_count) / int(following_count) > FOLLOWER_FOLLOWING_RATIO_MAX)):
-            print('Follower to Following ratio was less than ' + str(FOLLOWER_FOLLOWING_RATIO_MIN) +  ' or greater than ' + str(FOLLOWER_FOLLOWING_RATIO_MAX))
-            print('Ratio: ' + (str(int(follower_count) / int(following_count))))
+            log_action('Follower to Following ratio was less than ' + str(FOLLOWER_FOLLOWING_RATIO_MIN) +  ' or greater than ' + str(FOLLOWER_FOLLOWING_RATIO_MAX))
+            log_action('Ratio: ' + (str(int(follower_count) / int(following_count))))
             x += 1
             continue
 
