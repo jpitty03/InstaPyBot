@@ -1,6 +1,7 @@
 # InstaPyBot
 
 :warning: **Active development in process. Some features/settings may not work properly.**
+
 Please report any issues getting started. I'm not the greatest at instructions, so if you run into a problem feel free to open an issue!
 
 ## Description
